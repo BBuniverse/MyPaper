@@ -41,6 +41,8 @@
 - `LLM_BASE_URL`，例如 `https://api.deepseek.com/v1`
 - `LLM_MODEL`，例如 `deepseek-chat`
 
+`LLM_BASE_URL` 和 `LLM_MODEL` 也可以放在 Secrets 中；workflow 会优先读取 Variables，未设置时读取 Secrets。
+
 不配置 API key 时，项目仍会正常抓取论文，但中文总结会退化为基础摘要。
 
 ## 启用 GitHub Pages

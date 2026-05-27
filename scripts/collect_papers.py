@@ -291,6 +291,16 @@ def llm_enabled() -> bool:
     return bool(os.getenv("LLM_API_KEY") or os.getenv("OPENAI_API_KEY") or os.getenv("DEEPSEEK_API_KEY"))
 
 
+def llm_provider_label() -> str:
+    if os.getenv("LLM_API_KEY"):
+        return "openai-compatible"
+    if os.getenv("OPENAI_API_KEY"):
+        return "openai"
+    if os.getenv("DEEPSEEK_API_KEY"):
+        return "deepseek"
+    return "disabled"
+
+
 def llm_headers(api_key: str) -> dict[str, str]:
     return {
         "Content-Type": "application/json",
@@ -412,6 +422,11 @@ def collect(config_path: Path, output_path: Path, days: int, max_per_topic: int,
     config = load_issue_config(default_config)
     topics = parse_topics(config)
     now = dt.datetime.now(dt.timezone.utc)
+    print(
+        f"LLM provider: {llm_provider_label()}, enabled={llm_enabled()}, "
+        f"model={os.getenv('LLM_MODEL') or ('deepseek-chat' if os.getenv('DEEPSEEK_API_KEY') else 'gpt-4o-mini')}",
+        flush=True,
+    )
 
     all_candidates = []
     successful_fetches = 0
@@ -454,11 +469,16 @@ def collect(config_path: Path, output_path: Path, days: int, max_per_topic: int,
             recent_papers.append(paper)
 
     recent_papers.sort(key=lambda p: (p["best_match"]["score"], p.get("published", "")), reverse=True)
+    print(f"Collected {len(recent_papers)} matched papers; max summaries: {max_summaries}", flush=True)
+    if not recent_papers:
+        print("No matched papers found, so the LLM will not be called.", flush=True)
 
     summarized = 0
     for paper in recent_papers:
         best_topic = next(topic for topic in topics if topic.id == paper["best_match"]["topic_id"])
         if summarized < max_summaries:
+            if llm_enabled():
+                print(f"Summarizing with {llm_provider_label()}: {paper.get('id')}", flush=True)
             summary, adjusted_match = summarize_with_llm(best_topic, paper, paper["best_match"])
             paper["chinese_summary"] = summary
             paper["best_match"] = adjusted_match
@@ -480,6 +500,7 @@ def collect(config_path: Path, output_path: Path, days: int, max_per_topic: int,
             "days": days,
             "max_per_topic": max_per_topic,
             "llm_enabled": llm_enabled(),
+            "llm_provider": llm_provider_label(),
             "successful_fetches": successful_fetches,
             "failed_fetches": failed_fetches,
         },
