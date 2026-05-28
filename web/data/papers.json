@@ -1,7 +1,7 @@
 {
-  "generated_at": "Thu, 28 May 2026 13:10:07 +0000",
-  "generated_at_iso": "2026-05-28T13:10:07.841506+00:00",
-  "config_source": "file",
+  "generated_at": "Thu, 28 May 2026 13:18:49 +0000",
+  "generated_at_iso": "2026-05-28T13:18:49.361053+00:00",
+  "config_source": "issue",
   "topics": [
     {
       "id": "llm_low_precision_quantization",
@@ -127,13 +127,13 @@
         {
           "topic_id": "llm_low_precision_quantization",
           "topic_name": "大模型低精度量化",
-          "score": 0.653,
+          "score": 0.853,
           "level": "high",
           "reason": "关键词命中：post-training quantization；arXiv 分类重合：cs.LG",
           "keyword_hits": [
             "post-training quantization"
           ],
-          "llm_reason": "论文聚焦大模型后训练量化，涉及低比特权重量化和激活量化（W4A4），且关注量化对推理精度和内存占用影响，与我的研究方向高度一致。"
+          "llm_reason": "论文涉及大模型后训练量化，旨在实现低比特（W4A4）权重量化和激活量化，与我的研究方向“大模型低精度量化”高度吻合，特别是该方法在LLM和扩散模型上的均匀量化技术对研究有直接参考价值。"
         },
         {
           "topic_id": "tensor_compute_unit_architecture",
@@ -163,25 +163,25 @@
       "best_match": {
         "topic_id": "llm_low_precision_quantization",
         "topic_name": "大模型低精度量化",
-        "score": 0.653,
+        "score": 0.853,
         "level": "high",
         "reason": "关键词命中：post-training quantization；arXiv 分类重合：cs.LG",
         "keyword_hits": [
           "post-training quantization"
         ],
-        "llm_reason": "论文聚焦大模型后训练量化，涉及低比特权重量化和激活量化（W4A4），且关注量化对推理精度和内存占用影响，与我的研究方向高度一致。"
+        "llm_reason": "论文涉及大模型后训练量化，旨在实现低比特（W4A4）权重量化和激活量化，与我的研究方向“大模型低精度量化”高度吻合，特别是该方法在LLM和扩散模型上的均匀量化技术对研究有直接参考价值。"
       },
       "chinese_summary": {
-        "problem": "VLA模型因多语言骨干和扩散动作头导致设备端部署成本过高，现有量化方法仅压缩语言骨干或采用混合精度，未能统一量化扩散动作头，本工作挑战动作头均匀量化不稳定的假设。",
-        "method": "提出Ω-QVLA，首次无需训练的PTQ框架，通过复合SVD-Hadamard旋转平衡权重能量并扩散激活异常值，结合逐步DiT激活缩放量化吸收去噪步骤的动态范围漂移，将语言骨干和整个扩散动作头统一量化到W4A4。",
-        "innovation": "首次实现VLA模型中LLM骨干和DiT扩散动作头端到端统一W4A4量化，无需混合精度分配；提出复合SVD-Hadamard旋转解决权重能量不均衡和激活异常值；针对扩散动作头设计逐步DiT激活缩放量化，适应多步去噪的动态范围变化。",
-        "evidence": "在LIBERO上，压缩Pi 0.5和GR00T N1.5到W4A4，任务成功率分别为98.0%和87.8%，匹配或超过FP16参考的97.1%和87.0%；静态内存占用减少71.3%；真实世界操作实验确认平滑准确。",
-        "limitations": "摘要仅给出成功率，未提及时延或吞吐量等推理性能指标；未说明W4A4量化对模型精度影响的理论保证；泛化到其他VLA模型或任务需进一步验证。",
-        "why_relevant": "论文聚焦大模型后训练量化，涉及低比特权重量化和激活量化（W4A4），且关注量化对推理精度和内存占用影响，与我的研究方向高度一致。"
+        "problem": "现有VLA模型量化方法大多只压缩LLM主干而保持DiT动作头全精度，或采用混合精度，因为认为均匀量化动作头不稳定，导致无法实现模型整体的低比特均匀量化，阻碍端侧部署。",
+        "method": "提出训练免费的后训练量化方法Ω-QVLA，结合复合SVD-Hadamard旋转均衡每通道权重能量并扩散激活异常值，以及逐步DiT激活缩放量化技术吸收去噪步骤间的动态范围漂移，实现对LLM主干和扩散动作头的统一W4A4量化。",
+        "innovation": "1) 首次对VLA模型实现无需训练的W4A4统一量化，打破扩散动作头无法均匀量化的假设；2) 提出复合SVD-Hadamard旋转，同时解决权重量化困难和激活异常值问题；3) 设计逐步DiT激活缩放量化方法，无需混合精度即可处理去噪过程中激活的动态范围变化。",
+        "evidence": "在LIBERO基准上，Ω-QVLA将Pi 0.5和GR00T N1.5压缩至W4A4，任务成功率分别达98.0%和87.8%，匹配或超过FP16基准的97.1%和87.0%，静态内存占用减少71.3%；真实世界操作实验验证了平滑准确的操作，优于先前方法。",
+        "limitations": "摘要未提及除LIBERO外的泛化性，量化仅针对特定VLA模型架构，逐步缩放对更长去噪步骤的适应性需进一步验证，未讨论量化对推理延迟的影响。",
+        "why_relevant": "论文涉及大模型后训练量化，旨在实现低比特（W4A4）权重量化和激活量化，与我的研究方向“大模型低精度量化”高度吻合，特别是该方法在LLM和扩散模型上的均匀量化技术对研究有直接参考价值。"
       },
       "first_seen_at": "2026-05-28T09:35:48.728882+00:00",
-      "last_seen_at": "2026-05-28T13:05:59.065945+00:00",
-      "retained_from_previous_run": true
+      "last_seen_at": "2026-05-28T13:18:49.361053+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2605.28488v1",
@@ -212,7 +212,7 @@
           "level": "low",
           "reason": "arXiv 分类重合：cs.LG",
           "keyword_hits": [],
-          "llm_reason": "与我的研究方向（大模型推理集群通信优化）无直接关联，仅因arXiv分类含cs.LG而自动匹配。"
+          "llm_reason": "本研究针对图数据的统计推断与模型选择，与分布式推理集群通信优化（如张量并行、调度等领域）无直接关联，仅因arXiv分类包含cs.LG产生微弱匹配。"
         },
         {
           "topic_id": "llm_low_precision_quantization",
@@ -246,19 +246,19 @@
         "level": "low",
         "reason": "arXiv 分类重合：cs.LG",
         "keyword_hits": [],
-        "llm_reason": "与我的研究方向（大模型推理集群通信优化）无直接关联，仅因arXiv分类含cs.LG而自动匹配。"
+        "llm_reason": "本研究针对图数据的统计推断与模型选择，与分布式推理集群通信优化（如张量并行、调度等领域）无直接关联，仅因arXiv分类包含cs.LG产生微弱匹配。"
       },
       "chinese_summary": {
-        "problem": "解决随机块模型(SBM)中推断与模型选择(即聚类数估计)的计算效率与准确性问题，避免网格搜索等启发式步骤。",
-        "method": "将最大似然变分推断解释为半松弛Gromov-Wasserstein投影，并提出非正则化srGW估计量，进一步引入稀疏性正则化以同时完成参数估计和聚类数选择。",
-        "innovation": "首次建立MLVI与srGW投影的联系；证明非正则化srGW估计量在渐近下可一致恢复SBM连接矩阵和隐聚类分配，但有限样本下需额外机制促进模型选择。",
-        "evidence": "摘要中声称实验显示正则化后的估计量可在单一优化问题中同时恢复模型参数并选择聚类数量，但未提供具体实验数据、数据集或对比基准。",
-        "limitations": "仅针对SBM模型，推广性存疑；正则化方法的具体形式与超参数影响未在摘要中明确；实际计算效率与传统方法的对比未知。",
-        "why_relevant": "与我的研究方向（大模型推理集群通信优化）无直接关联，仅因arXiv分类含cs.LG而自动匹配。"
+        "problem": "在随机块模型（SBM）中，如何同时实现高效的聚类推断与自动模型选择（即确定簇的数量），避免传统网格搜索等启发式方法。",
+        "method": "将最大似然变分推断解释为半松弛Gromov-Wasserstein投影，进而研究非正则化的srGW估计量，并提出一种正则化形式以在单一优化问题中同时推断参数和选择簇数。",
+        "innovation": "揭示了最大似然变分推断与半松弛熵正则化Gromov-Wasserstein投影的等价性；证明了非正则化srGW估计量在渐近情况下能一致恢复连接矩阵和潜在簇分配；引入稀疏性正则化机制，在有限样本下实现自动模型选择，无需额外计算。",
+        "evidence": "摘要中仅提及理论证明（渐近一致性）和经验展示（正则化形式同时完成参数估计和模型选择），但未提供具体实验指标或数据集。",
+        "limitations": "未说明有限样本下正则化方法的具体性能阈值；实证部分仅概括，未给出对比基准或量化结果；方法基于SBM假定，泛化至其它图模型未讨论。",
+        "why_relevant": "本研究针对图数据的统计推断与模型选择，与分布式推理集群通信优化（如张量并行、调度等领域）无直接关联，仅因arXiv分类包含cs.LG产生微弱匹配。"
       },
       "first_seen_at": "2026-05-28T09:35:48.728882+00:00",
-      "last_seen_at": "2026-05-28T13:05:59.065945+00:00",
-      "retained_from_previous_run": true
+      "last_seen_at": "2026-05-28T13:18:49.361053+00:00",
+      "retained_from_previous_run": false
     }
   ],
   "stats": {
@@ -266,26 +266,25 @@
     "new_paper_count": 2,
     "days": 1,
     "collection_mode": "lookback",
-    "collection_cutoff_iso": "2026-05-27T13:05:59.065945+00:00",
+    "collection_cutoff_iso": "2026-05-27T13:18:49.361053+00:00",
     "max_per_topic": 25,
     "llm_enabled": true,
     "llm_concurrency": 2,
     "recent_history_days": 45,
-    "successful_fetches": 0,
-    "failed_fetches": 6,
-    "retained_paper_count": 2,
+    "successful_fetches": 4,
+    "failed_fetches": 0,
+    "retained_paper_count": 0,
     "retained_recent_low_count": 1,
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 800,
     "max_data_bytes": 8388608,
-    "data_bytes": 14519,
+    "data_bytes": 15200,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
       "medium": 0,
       "low": 0,
       "unknown": 0
-    },
-    "last_error": "All arXiv requests failed."
+    }
   }
 }
