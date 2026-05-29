@@ -2,7 +2,7 @@ import datetime as dt
 import unittest
 from unittest.mock import patch
 
-from scripts.collect_papers import Topic, arxiv_query_for_topic, collection_cutoff, extract_known_venue, merge_with_retained_papers, publication_status, trim_papers_for_storage
+from scripts.collect_papers import Topic, arxiv_batch_query, arxiv_query_for_topic, collection_cutoff, extract_known_venue, merge_with_retained_papers, publication_status, trim_papers_for_storage
 
 
 def paper(paper_id: str, level: str, published: str) -> dict:
@@ -23,6 +23,16 @@ def paper(paper_id: str, level: str, published: str) -> dict:
 
 
 class RetentionTest(unittest.TestCase):
+    def test_arxiv_batch_query_uses_unique_categories(self) -> None:
+        topics = [
+            Topic(id="a", name="A", description="", keywords=[], arxiv_categories=["cs.CV", "eess.IV"]),
+            Topic(id="b", name="B", description="", keywords=[], arxiv_categories=["cs.CV", "cs.LG"]),
+        ]
+
+        query = arxiv_batch_query(topics)
+
+        self.assertEqual(query, "(cat:cs.CV OR cat:eess.IV OR cat:cs.LG)")
+
     def test_arxiv_query_uses_more_than_eight_keywords_by_default(self) -> None:
         topic = Topic(
             id="topic",

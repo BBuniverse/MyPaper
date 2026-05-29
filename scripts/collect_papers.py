@@ -27,7 +27,8 @@ RETAINED_MATCH_LEVELS = {"high", "medium"}
 DEFAULT_MAX_STORED_PAPERS = 800
 DEFAULT_MAX_DATA_BYTES = 8 * 1024 * 1024
 DEFAULT_RECENT_HISTORY_DAYS = 45
-  DEFAULT_MAX_QUERY_KEYWORDS = 12
+DEFAULT_MAX_QUERY_KEYWORDS = 12
+DEFAULT_ARXIV_FETCH_MODE = "batch"
 KNOWN_VENUES = {
     "CVPR": ("CVPR", "IEEE/CVF Conference on Computer Vision and Pattern Recognition"),
     "ICCV": ("ICCV", "International Conference on Computer Vision"),
@@ -174,6 +175,30 @@ def arxiv_query_for_topic(topic: Topic) -> str:
     return " AND ".join(parts) if parts else f'all:"{topic.name}"'
 
 
+def arxiv_batch_query(topics: list[Topic]) -> str:
+    categories = []
+    seen = set()
+    for topic in topics:
+        for category in topic.arxiv_categories:
+            if category and category not in seen:
+                seen.add(category)
+                categories.append(category)
+    if categories:
+        return "(" + " OR ".join(f"cat:{category}" for category in categories) + ")"
+
+    keyword_terms = []
+    seen_keywords = set()
+    for topic in topics:
+        for keyword in topic.keywords:
+            normalized = keyword.lower()
+            if normalized in seen_keywords:
+                continue
+            seen_keywords.add(normalized)
+            escaped = keyword.replace('"', '\\"')
+            keyword_terms.append(f'all:"{escaped}"')
+    return "(" + " OR ".join(keyword_terms) + ")" if keyword_terms else 'all:"computer vision"'
+
+
 def venue_regex(alias: str) -> str:
     parts = [part for part in re.split(r"[\s'./&-]+", alias) if part]
     return r"[\s'./&-]*".join(re.escape(part) for part in parts)
@@ -259,34 +284,7 @@ def publication_status(journal_ref: str, doi: str, comment: str) -> dict[str, st
     }
 
 
-def fetch_arxiv(topic: Topic, max_results: int) -> list[dict[str, Any]]:
-    params = {
-        "search_query": arxiv_query_for_topic(topic),
-        "start": "0",
-        "max_results": str(max_results),
-        "sortBy": "submittedDate",
-        "sortOrder": "descending",
-    }
-    url = f"{ARXIV_API_URL}?{urllib.parse.urlencode(params)}"
-    req = urllib.request.Request(url, headers={"User-Agent": "paper-daily-collector/1.0"})
-    retry_count = int(os.getenv("ARXIV_RETRIES", "3"))
-    last_error: Exception | None = None
-    for attempt in range(retry_count):
-        try:
-            with urllib.request.urlopen(req, timeout=45) as resp:
-                xml_data = resp.read()
-            break
-        except urllib.error.HTTPError as exc:
-            last_error = exc
-            if exc.code != 429 or attempt == retry_count - 1:
-                raise
-            retry_after = exc.headers.get("Retry-After")
-            wait_seconds = int(retry_after) if retry_after and retry_after.isdigit() else 20 * (attempt + 1)
-            print(f"arXiv rate limited {topic.name}, retrying in {wait_seconds}s", flush=True)
-            time.sleep(wait_seconds)
-    else:
-        raise RuntimeError(f"arXiv request failed: {last_error}")
-
+def parse_arxiv_feed(xml_data: bytes, seed_topic: str) -> list[dict[str, Any]]:
     root = ET.fromstring(xml_data)
     papers = []
     for entry in root.findall("atom:entry", ARXIV_NS):
@@ -321,10 +319,45 @@ def fetch_arxiv(topic: Topic, max_results: int) -> list[dict[str, Any]]:
                 "paper_url": paper_id,
                 "pdf_url": pdf_url or paper_id.replace("/abs/", "/pdf/"),
                 "categories": categories,
-                "seed_topic": topic.id,
+                "seed_topic": seed_topic,
             }
         )
     return papers
+
+
+def fetch_arxiv_query(search_query: str, max_results: int, label: str, seed_topic: str) -> list[dict[str, Any]]:
+    params = {
+        "search_query": search_query,
+        "start": "0",
+        "max_results": str(max_results),
+        "sortBy": "submittedDate",
+        "sortOrder": "descending",
+    }
+    url = f"{ARXIV_API_URL}?{urllib.parse.urlencode(params)}"
+    req = urllib.request.Request(url, headers={"User-Agent": "paper-daily-collector/1.0"})
+    retry_count = int(os.getenv("ARXIV_RETRIES", "3"))
+    last_error: Exception | None = None
+    for attempt in range(retry_count):
+        try:
+            with urllib.request.urlopen(req, timeout=45) as resp:
+                xml_data = resp.read()
+            break
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+            if exc.code != 429 or attempt == retry_count - 1:
+                raise
+            retry_after = exc.headers.get("Retry-After")
+            wait_seconds = int(retry_after) if retry_after and retry_after.isdigit() else 20 * (attempt + 1)
+            print(f"arXiv rate limited {label}, retrying in {wait_seconds}s", flush=True)
+            time.sleep(wait_seconds)
+    else:
+        raise RuntimeError(f"arXiv request failed: {last_error}")
+
+    return parse_arxiv_feed(xml_data, seed_topic)
+
+
+def fetch_arxiv(topic: Topic, max_results: int) -> list[dict[str, Any]]:
+    return fetch_arxiv_query(arxiv_query_for_topic(topic), max_results, topic.name, topic.id)
 
 
 def parse_datetime(value: str | None) -> dt.datetime | None:
@@ -704,19 +737,35 @@ def collect(
     all_candidates = []
     successful_fetches = 0
     failed_fetches = 0
-    for index, topic in enumerate(topics):
-        if index:
-            time.sleep(float(os.getenv("ARXIV_DELAY_SECONDS", "6")))
-        print(f"Fetching arXiv papers for topic: {topic.name}", flush=True)
+    fetch_mode = os.getenv("ARXIV_FETCH_MODE", DEFAULT_ARXIV_FETCH_MODE).strip().lower()
+    fetch_attempts = 0
+    if fetch_mode == "per_topic":
+        for index, topic in enumerate(topics):
+            if index:
+                time.sleep(float(os.getenv("ARXIV_DELAY_SECONDS", "6")))
+            fetch_attempts += 1
+            print(f"Fetching arXiv papers for topic: {topic.name}", flush=True)
+            try:
+                topic_papers = fetch_arxiv(topic, max_per_topic)
+                all_candidates.extend(topic_papers)
+                successful_fetches += 1
+            except Exception as exc:
+                failed_fetches += 1
+                print(f"Warning: arXiv request failed for {topic.name}: {exc}", file=sys.stderr)
+    else:
+        fetch_mode = "batch"
+        batch_max_results = int(os.getenv("ARXIV_BATCH_MAX_RESULTS", str(max_per_topic * max(1, len(topics)))))
+        fetch_attempts = 1
+        query = arxiv_batch_query(topics)
+        print(f"Fetching arXiv papers once for {len(topics)} topics, max_results={batch_max_results}", flush=True)
         try:
-            topic_papers = fetch_arxiv(topic, max_per_topic)
-            all_candidates.extend(topic_papers)
+            all_candidates.extend(fetch_arxiv_query(query, batch_max_results, "batch topics", "batch"))
             successful_fetches += 1
         except Exception as exc:
             failed_fetches += 1
-            print(f"Warning: arXiv request failed for {topic.name}: {exc}", file=sys.stderr)
+            print(f"Warning: arXiv batch request failed: {exc}", file=sys.stderr)
 
-    if failed_fetches == len(topics) and existing_payload:
+    if fetch_attempts > 0 and failed_fetches >= fetch_attempts and existing_payload:
         existing = existing_payload
         if existing.get("papers"):
             print("All sources failed; preserving existing paper data.", file=sys.stderr)
@@ -731,6 +780,8 @@ def collect(
                     "last_error": "All arXiv requests failed.",
                     "successful_fetches": successful_fetches,
                     "failed_fetches": failed_fetches,
+                    "arxiv_fetch_mode": fetch_mode,
+                    "arxiv_fetch_attempts": fetch_attempts,
                     **retention_stats,
                 }
             )
@@ -811,6 +862,8 @@ def collect(
             "recent_history_days": recent_history_days,
             "successful_fetches": successful_fetches,
             "failed_fetches": failed_fetches,
+            "arxiv_fetch_mode": fetch_mode,
+            "arxiv_fetch_attempts": fetch_attempts,
             **retention_stats,
         },
     }

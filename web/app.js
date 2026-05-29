@@ -1,5 +1,6 @@
 const state = {
   data: null,
+  theme: localStorage.getItem("paperDailyTheme") || "marine",
   filters: {
     query: "",
     topic: "all",
@@ -25,8 +26,22 @@ const nodes = {
   dateFilter: document.querySelector("#dateFilter"),
   searchInput: document.querySelector("#searchInput"),
   tabs: document.querySelectorAll(".tab"),
+  themeButtons: document.querySelectorAll(".theme-button"),
   template: document.querySelector("#paperTemplate"),
 };
+
+function setTheme(theme) {
+  const availableThemes = [...nodes.themeButtons].map((button) => button.dataset.theme);
+  const nextTheme = availableThemes.includes(theme) ? theme : "marine";
+  state.theme = nextTheme;
+  document.body.dataset.theme = nextTheme;
+  localStorage.setItem("paperDailyTheme", nextTheme);
+  for (const button of nodes.themeButtons) {
+    const active = button.dataset.theme === nextTheme;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  }
+}
 
 function parseDate(value) {
   if (!value) return null;
@@ -305,6 +320,9 @@ function bindEvents() {
       render();
     });
   }
+  for (const button of nodes.themeButtons) {
+    button.addEventListener("click", () => setTheme(button.dataset.theme || "marine"));
+  }
 }
 
 async function loadData() {
@@ -314,6 +332,7 @@ async function loadData() {
 }
 
 async function main() {
+  setTheme(state.theme);
   bindEvents();
   try {
     state.data = await loadData();
