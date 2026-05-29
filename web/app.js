@@ -102,6 +102,12 @@ function textIncludes(paper, query) {
     paper.summary,
     (paper.authors || []).join(" "),
     (paper.categories || []).join(" "),
+    paper.journal_ref,
+    paper.doi,
+    paper.comment,
+    paper.publication_status?.label,
+    paper.publication_status?.venue,
+    paper.publication_status?.short_venue,
     paper.best_match?.reason,
     paper.chinese_summary?.innovation,
     paper.chinese_summary?.why_relevant,
@@ -154,10 +160,16 @@ function renderPaper(paper) {
   const best = paper.best_match || {};
   const summary = paper.chinese_summary || {};
   const badge = node.querySelector(".match-badge");
+  const publicationBadge = node.querySelector(".publication-badge");
+  const publication = paper.publication_status || {};
   const level = levelOf(paper);
 
   badge.textContent = `${level} ${scoreOf(paper).toFixed(2)}`;
   badge.classList.add(level);
+  const publicationText = publication.short_venue || publication.venue;
+  publicationBadge.textContent = publicationText ? `${publication.label}：${publicationText}` : publication.label || "暂无期刊信息";
+  publicationBadge.classList.toggle("known", Boolean(publication.has_publication_info));
+  publicationBadge.title = publication.venue || publication.source || "arXiv 未提供 journal_ref / doi / comment 录用信息";
 
   setText(node, ".paper-date", `发布 ${formatDate(paper.published)} · 收录 ${formatDate(collectionTime(paper))}`);
   setText(node, ".paper-source", paper.source || "paper");

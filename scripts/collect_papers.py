@@ -19,7 +19,6 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-
 ARXIV_API_URL = "https://export.arxiv.org/api/query"
 ARXIV_NS = {"atom": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
 DEFAULT_CONFIG = Path("config/interests.json")
@@ -28,6 +27,23 @@ RETAINED_MATCH_LEVELS = {"high", "medium"}
 DEFAULT_MAX_STORED_PAPERS = 800
 DEFAULT_MAX_DATA_BYTES = 8 * 1024 * 1024
 DEFAULT_RECENT_HISTORY_DAYS = 45
+  DEFAULT_MAX_QUERY_KEYWORDS = 12
+KNOWN_VENUES = {
+    "CVPR": ("CVPR", "IEEE/CVF Conference on Computer Vision and Pattern Recognition"),
+    "ICCV": ("ICCV", "International Conference on Computer Vision"),
+    "ECCV": ("ECCV", "European Conference on Computer Vision"),
+    "NeurIPS": ("NeurIPS", "NIPS", "Neural Information Processing Systems"),
+    "ICLR": ("ICLR", "International Conference on Learning Representations"),
+    "ICML": ("ICML", "International Conference on Machine Learning"),
+    "AAAI": ("AAAI", "AAAI Conference on Artificial Intelligence"),
+    "TPAMI": ("TPAMI", "T-PAMI", "PAMI", "IEEE TPAMI", "IEEE T-PAMI", "IEEE Transactions on Pattern Analysis and Machine Intelligence"),
+    "IJCV": ("IJCV", "International Journal of Computer Vision"),
+    "TIP": ("TIP", "IEEE TIP", "IEEE Transactions on Image Processing"),
+    "TMM": ("TMM", "IEEE TMM", "IEEE Transactions on Multimedia"),
+    "WACV": ("WACV", "Winter Conference on Applications of Computer Vision"),
+    "ACM MM": ("ACM MM", "ACMMM", "ACM Multimedia"),
+    "BMVC": ("BMVC", "British Machine Vision Conference"),
+}
 
 
 @dataclass(frozen=True)
@@ -37,6 +53,7 @@ class Topic:
     description: str
     keywords: list[str]
     arxiv_categories: list[str]
+    max_query_keywords: int | None = None
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -74,6 +91,7 @@ def parse_topics(config: dict[str, Any]) -> list[Topic]:
                 description=item.get("description", ""),
                 keywords=[str(k) for k in item.get("keywords", [])],
                 arxiv_categories=[str(c) for c in item.get("arxiv_categories", [])],
+                max_query_keywords=int(item["max_query_keywords"]) if item.get("max_query_keywords") is not None else None,
             )
         )
     if not topics:
@@ -137,7 +155,13 @@ def load_issue_config(default_config: dict[str, Any]) -> dict[str, Any]:
 
 def arxiv_query_for_topic(topic: Topic) -> str:
     keyword_terms = []
-    for keyword in topic.keywords[:8]:
+    max_query_keywords = topic.max_query_keywords
+    if max_query_keywords is None:
+        try:
+            max_query_keywords = int(os.getenv("ARXIV_QUERY_KEYWORDS", str(DEFAULT_MAX_QUERY_KEYWORDS)))
+        except ValueError:
+            max_query_keywords = DEFAULT_MAX_QUERY_KEYWORDS
+    for keyword in topic.keywords[: max(1, max_query_keywords)]:
         escaped = keyword.replace('"', '\\"')
         keyword_terms.append(f'all:"{escaped}"')
 
@@ -148,6 +172,91 @@ def arxiv_query_for_topic(topic: Topic) -> str:
     if category_terms:
         parts.append("(" + " OR ".join(category_terms) + ")")
     return " AND ".join(parts) if parts else f'all:"{topic.name}"'
+
+
+def venue_regex(alias: str) -> str:
+    parts = [part for part in re.split(r"[\s'./&-]+", alias) if part]
+    return r"[\s'./&-]*".join(re.escape(part) for part in parts)
+
+
+def normalize_venue_year(value: str) -> str:
+    digits = re.sub(r"\D", "", value)
+    if len(digits) == 2:
+        return f"20{digits}" if int(digits) < 80 else f"19{digits}"
+    if len(digits) == 4:
+        return digits
+    return ""
+
+
+def extract_known_venue(value: str) -> str:
+    for venue, aliases in KNOWN_VENUES.items():
+        for alias in sorted(aliases, key=len, reverse=True):
+            pattern = rf"(?<![A-Za-z0-9])(?:{venue_regex(alias)})(?:[\s,;:()/-]*(?:20)?('?[0-9]{{2}}|(?:19|20)[0-9]{{2}}))?(?![A-Za-z0-9])"
+            match = re.search(pattern, value, flags=re.I)
+            if match:
+                year = normalize_venue_year(match.group(1) or "")
+                if not year:
+                    nearby_year = re.search(r"(?:19|20)[0-9]{2}|'[0-9]{2}", value[match.end() : match.end() + 32])
+                    year = normalize_venue_year(nearby_year.group(0) if nearby_year else "")
+                return f"{venue} {year}".strip()
+    return ""
+
+
+def publication_status(journal_ref: str, doi: str, comment: str) -> dict[str, str | bool]:
+    comment_venue = extract_known_venue(comment)
+    journal_venue = extract_known_venue(journal_ref)
+
+    if journal_ref:
+        return {
+            "status": "published",
+            "label": "已见刊/录用",
+            "venue": journal_ref,
+            "short_venue": journal_venue,
+            "source": "arXiv journal_ref",
+            "has_publication_info": True,
+        }
+    if comment_venue:
+        return {
+            "status": "venue_note",
+            "label": "会议/期刊信息",
+            "venue": comment_venue,
+            "short_venue": comment_venue,
+            "source": "arXiv comment",
+            "has_publication_info": True,
+        }
+    if doi:
+        return {
+            "status": "doi",
+            "label": "已有 DOI",
+            "venue": doi,
+            "short_venue": "",
+            "source": "arXiv doi",
+            "has_publication_info": True,
+        }
+
+    accepted_match = re.search(
+        r"\b(?:accepted|to appear|published|in press|forthcoming)\b[^.;\n]*",
+        comment,
+        flags=re.I,
+    )
+    if accepted_match:
+        return {
+            "status": "accepted_note",
+            "label": "作者备注录用",
+            "venue": normalize_space(accepted_match.group(0)),
+            "short_venue": "",
+            "source": "arXiv comment",
+            "has_publication_info": True,
+        }
+
+    return {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": False,
+    }
 
 
 def fetch_arxiv(topic: Topic, max_results: int) -> list[dict[str, Any]]:
@@ -186,15 +295,11 @@ def fetch_arxiv(topic: Topic, max_results: int) -> list[dict[str, Any]]:
         summary = normalize_space(entry.findtext("atom:summary", default="", namespaces=ARXIV_NS))
         published = entry.findtext("atom:published", default="", namespaces=ARXIV_NS)
         updated = entry.findtext("atom:updated", default="", namespaces=ARXIV_NS)
-        authors = [
-            normalize_space(author.findtext("atom:name", default="", namespaces=ARXIV_NS))
-            for author in entry.findall("atom:author", ARXIV_NS)
-        ]
-        categories = [
-            category.attrib.get("term", "")
-            for category in entry.findall("atom:category", ARXIV_NS)
-            if category.attrib.get("term")
-        ]
+        journal_ref = normalize_space(entry.findtext("arxiv:journal_ref", default="", namespaces=ARXIV_NS))
+        doi = normalize_space(entry.findtext("arxiv:doi", default="", namespaces=ARXIV_NS))
+        comment = normalize_space(entry.findtext("arxiv:comment", default="", namespaces=ARXIV_NS))
+        authors = [normalize_space(author.findtext("atom:name", default="", namespaces=ARXIV_NS)) for author in entry.findall("atom:author", ARXIV_NS)]
+        categories = [category.attrib.get("term", "") for category in entry.findall("atom:category", ARXIV_NS) if category.attrib.get("term")]
         pdf_url = ""
         for link in entry.findall("atom:link", ARXIV_NS):
             if link.attrib.get("title") == "pdf":
@@ -209,6 +314,10 @@ def fetch_arxiv(topic: Topic, max_results: int) -> list[dict[str, Any]]:
                 "summary": summary,
                 "published": published,
                 "updated": updated,
+                "journal_ref": journal_ref,
+                "doi": doi,
+                "comment": comment,
+                "publication_status": publication_status(journal_ref, doi, comment),
                 "paper_url": paper_id,
                 "pdf_url": pdf_url or paper_id.replace("/abs/", "/pdf/"),
                 "categories": categories,
@@ -255,9 +364,7 @@ def collection_cutoff(
     incremental_since_last_run: bool,
 ) -> tuple[dt.datetime, str]:
     if incremental_since_last_run:
-        previous_run = parse_datetime(
-            str(existing_payload.get("generated_at_iso") or existing_payload.get("generated_at") or "")
-        )
+        previous_run = parse_datetime(str(existing_payload.get("generated_at_iso") or existing_payload.get("generated_at") or ""))
         if previous_run:
             return previous_run, "incremental"
     return now - dt.timedelta(days=max(0, days)), "lookback"
@@ -499,11 +606,7 @@ def merge_with_retained_papers(
         if not key:
             continue
         seen_at = parse_datetime(str(paper.get("first_seen_at") or paper.get("last_seen_at") or existing_generated_at))
-        is_recent = bool(
-            recent_history_days > 0
-            and seen_at
-            and (now.date() - seen_at.date()).days <= recent_history_days
-        )
+        is_recent = bool(recent_history_days > 0 and seen_at and (now.date() - seen_at.date()).days <= recent_history_days)
         if best_match_level(paper) in RETAINED_MATCH_LEVELS or is_recent:
             retained_by_key[key] = paper
             if is_recent and best_match_level(paper) not in RETAINED_MATCH_LEVELS:
@@ -565,10 +668,7 @@ def trim_papers_for_storage(
         return json_size_bytes(projected)
 
     data_bytes = projected_size()
-    while papers and (
-        (max_stored_papers > 0 and len(papers) > max_stored_papers)
-        or (max_data_bytes > 0 and data_bytes > max_data_bytes)
-    ):
+    while papers and ((max_stored_papers > 0 and len(papers) > max_stored_papers) or (max_data_bytes > 0 and data_bytes > max_data_bytes)):
         remove_index = min(range(len(papers)), key=lambda index: deletion_sort_key(papers[index]))
         removed = papers.pop(remove_index)
         level = best_match_level(removed)
@@ -620,9 +720,7 @@ def collect(
         existing = existing_payload
         if existing.get("papers"):
             print("All sources failed; preserving existing paper data.", file=sys.stderr)
-            retained_papers, retention_stats = merge_with_retained_papers(
-                [], existing_payload, now, recent_history_days
-            )
+            retained_papers, retention_stats = merge_with_retained_papers([], existing_payload, now, recent_history_days)
             retained_papers.sort(key=lambda p: (p["best_match"]["score"], p.get("published", "")), reverse=True)
             existing["papers"] = retained_papers
             existing["generated_at"] = email.utils.format_datetime(now)
@@ -692,9 +790,7 @@ def collect(
         else:
             paper["chinese_summary"] = fallback_summary(paper, paper["best_match"])
 
-    merged_papers, retention_stats = merge_with_retained_papers(
-        recent_papers, existing_payload, now, recent_history_days
-    )
+    merged_papers, retention_stats = merge_with_retained_papers(recent_papers, existing_payload, now, recent_history_days)
     merged_papers.sort(key=lambda p: (p["best_match"]["score"], p.get("published", "")), reverse=True)
 
     payload = {

@@ -330,6 +330,27 @@ select:focus,
   color: var(--text);
 }
 
+.publication-badge {
+  display: inline-flex;
+  align-items: center;
+  max-width: min(560px, 100%);
+  min-height: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.055);
+  color: var(--muted);
+  padding: 3px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.publication-badge.known {
+  border-color: rgba(45, 212, 191, 0.32);
+  background: rgba(45, 212, 191, 0.1);
+  color: #9ff3e9;
+}
+
 .paper-title {
   margin: 12px 0 8px;
   max-width: 1050px;

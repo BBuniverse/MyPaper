@@ -1,7 +1,8 @@
 import datetime as dt
 import unittest
+from unittest.mock import patch
 
-from scripts.collect_papers import collection_cutoff, merge_with_retained_papers, trim_papers_for_storage
+from scripts.collect_papers import Topic, arxiv_query_for_topic, collection_cutoff, extract_known_venue, merge_with_retained_papers, publication_status, trim_papers_for_storage
 
 
 def paper(paper_id: str, level: str, published: str) -> dict:
@@ -22,6 +23,80 @@ def paper(paper_id: str, level: str, published: str) -> dict:
 
 
 class RetentionTest(unittest.TestCase):
+    def test_arxiv_query_uses_more_than_eight_keywords_by_default(self) -> None:
+        topic = Topic(
+            id="topic",
+            name="Topic",
+            description="",
+            keywords=[f"keyword {index}" for index in range(12)],
+            arxiv_categories=["cs.CV"],
+        )
+
+        query = arxiv_query_for_topic(topic)
+
+        self.assertIn('all:"keyword 11"', query)
+
+    def test_arxiv_query_keyword_count_can_be_configured(self) -> None:
+        topic = Topic(
+            id="topic",
+            name="Topic",
+            description="",
+            keywords=[f"keyword {index}" for index in range(12)],
+            arxiv_categories=["cs.CV"],
+        )
+
+        with patch.dict("os.environ", {"ARXIV_QUERY_KEYWORDS": "3"}):
+            query = arxiv_query_for_topic(topic)
+
+        self.assertIn('all:"keyword 2"', query)
+        self.assertNotIn('all:"keyword 3"', query)
+
+    def test_arxiv_query_prefers_topic_keyword_count(self) -> None:
+        topic = Topic(
+            id="topic",
+            name="Topic",
+            description="",
+            keywords=[f"keyword {index}" for index in range(12)],
+            arxiv_categories=["cs.CV"],
+            max_query_keywords=5,
+        )
+
+        with patch.dict("os.environ", {"ARXIV_QUERY_KEYWORDS": "3"}):
+            query = arxiv_query_for_topic(topic)
+
+        self.assertIn('all:"keyword 4"', query)
+        self.assertNotIn('all:"keyword 5"', query)
+
+    def test_extract_known_venue_from_comment(self) -> None:
+        self.assertEqual(extract_known_venue("Accepted by CVPR 2026"), "CVPR 2026")
+        self.assertEqual(extract_known_venue("To appear in IEEE/CVF Conference on Computer Vision and Pattern Recognition 2025"), "CVPR 2025")
+        self.assertEqual(extract_known_venue("Accepted to NIPS '26"), "NeurIPS 2026")
+        self.assertEqual(extract_known_venue("ICLR2025 poster"), "ICLR 2025")
+        self.assertEqual(extract_known_venue("IEEE TIP 2024"), "TIP 2024")
+        self.assertEqual(extract_known_venue("IEEE Transactions on Pattern Analysis and Machine Intelligence, 2024"), "TPAMI 2024")
+        self.assertEqual(extract_known_venue("International Journal of Computer Vision (IJCV), 2023"), "IJCV 2023")
+        self.assertEqual(extract_known_venue("This paper gives practical tips for restoration."), "")
+
+    def test_publication_status_prefers_journal_ref(self) -> None:
+        status = publication_status("Nature 620, 123-130 (2026)", "10.1234/example", "Accepted by Nature")
+
+        self.assertEqual(status["status"], "published")
+        self.assertEqual(status["venue"], "Nature 620, 123-130 (2026)")
+        self.assertTrue(status["has_publication_info"])
+
+    def test_publication_status_uses_doi_or_comment_when_needed(self) -> None:
+        doi_status = publication_status("", "10.1234/example", "")
+        venue_status = publication_status("", "", "CVPR 2026, Highlight paper")
+        comment_status = publication_status("", "", "Accepted as an oral presentation.")
+        unknown_status = publication_status("", "", "")
+
+        self.assertEqual(doi_status["status"], "doi")
+        self.assertEqual(venue_status["status"], "venue_note")
+        self.assertEqual(venue_status["venue"], "CVPR 2026")
+        self.assertEqual(comment_status["status"], "accepted_note")
+        self.assertEqual(unknown_status["status"], "unknown")
+        self.assertFalse(unknown_status["has_publication_info"])
+
     def test_merge_retains_previous_high_medium_and_recent_low(self) -> None:
         now = dt.datetime(2026, 5, 28, tzinfo=dt.timezone.utc)
         stale_low = paper("old-low", "low", "2026-03-01T00:00:00+00:00")
