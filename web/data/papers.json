@@ -1,6 +1,6 @@
 {
-  "generated_at": "Sun, 12 Jul 2026 22:47:16 +0000",
-  "generated_at_iso": "2026-07-12T22:47:16.271233+00:00",
+  "generated_at": "Mon, 13 Jul 2026 22:55:25 +0000",
+  "generated_at_iso": "2026-07-13T22:55:25.556058+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -231,91 +231,14 @@
       "first_seen_at": "2026-05-28T09:35:48.728882+00:00",
       "last_seen_at": "2026-05-28T13:18:49.361053+00:00",
       "retained_from_previous_run": true
-    },
-    {
-      "id": "2605.28488v1",
-      "source": "arXiv",
-      "title": "Bridging Maximum Likelihood and Optimal Transport for Efficient Inference and Model Selection in Stochastic Block Models",
-      "authors": [
-        "Simon Queric",
-        "Cédric Vincent-Cuaz",
-        "Charles Bouveyron",
-        "Marco Corneli"
-      ],
-      "summary": "We study inference in stochastic block models (SBMs) through the lens of optimal transport (OT). We first establish that maximum likelihood variational inference (MLVI) can be interpreted as a semi-relaxed Gromov-Wasserstein (srGW) projection with entropic regularization. While this formulation yields accurate clustering, the entropic regularization prevents transport plans to be sparse, hindering intrinsic model selection. Consequently, we investigate unregularized srGW estimators, and prove that they consistently recover both the SBM connectivity matrix and latent cluster assignments in the asymptotic regime. However, this asymptotic property does not translate into reliable model selection in finite samples, and calls for additional mechanisms to promote sparsity in the inferred cluster proportions. We empirically show that such a regularized formulation yields estimators that simultaneously recover model parameters and select the number of clusters in a single optimization problem, thereby avoiding costly grid search or heuristic model selection procedures.",
-      "published": "2026-05-27T13:44:43Z",
-      "updated": "2026-05-27T13:44:43Z",
-      "paper_url": "http://arxiv.org/abs/2605.28488v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.28488v1",
-      "categories": [
-        "stat.ML",
-        "cs.LG",
-        "math.ST"
-      ],
-      "seed_topic": "llm_inference_cluster_communication",
-      "matches": [
-        {
-          "topic_id": "llm_inference_cluster_communication",
-          "topic_name": "大模型推理集群通信优化",
-          "score": 0.125,
-          "level": "low",
-          "reason": "arXiv 分类重合：cs.LG",
-          "keyword_hits": [],
-          "llm_reason": "本研究针对图数据的统计推断与模型选择，与分布式推理集群通信优化（如张量并行、调度等领域）无直接关联，仅因arXiv分类包含cs.LG产生微弱匹配。"
-        },
-        {
-          "topic_id": "llm_low_precision_quantization",
-          "topic_name": "大模型低精度量化",
-          "score": 0.094,
-          "level": "low",
-          "reason": "arXiv 分类重合：cs.LG",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "tensor_compute_unit_architecture",
-          "topic_name": "张量计算单元结构",
-          "score": 0.094,
-          "level": "low",
-          "reason": "arXiv 分类重合：cs.LG",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "kvcache_compression_storage_scheduling",
-          "topic_name": "KV cache 压缩与存储调度",
-          "score": 0.094,
-          "level": "low",
-          "reason": "arXiv 分类重合：cs.LG",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "llm_inference_cluster_communication",
-        "topic_name": "大模型推理集群通信优化",
-        "score": 0.125,
-        "level": "low",
-        "reason": "arXiv 分类重合：cs.LG",
-        "keyword_hits": [],
-        "llm_reason": "本研究针对图数据的统计推断与模型选择，与分布式推理集群通信优化（如张量并行、调度等领域）无直接关联，仅因arXiv分类包含cs.LG产生微弱匹配。"
-      },
-      "chinese_summary": {
-        "problem": "在随机块模型（SBM）中，如何同时实现高效的聚类推断与自动模型选择（即确定簇的数量），避免传统网格搜索等启发式方法。",
-        "method": "将最大似然变分推断解释为半松弛Gromov-Wasserstein投影，进而研究非正则化的srGW估计量，并提出一种正则化形式以在单一优化问题中同时推断参数和选择簇数。",
-        "innovation": "揭示了最大似然变分推断与半松弛熵正则化Gromov-Wasserstein投影的等价性；证明了非正则化srGW估计量在渐近情况下能一致恢复连接矩阵和潜在簇分配；引入稀疏性正则化机制，在有限样本下实现自动模型选择，无需额外计算。",
-        "evidence": "摘要中仅提及理论证明（渐近一致性）和经验展示（正则化形式同时完成参数估计和模型选择），但未提供具体实验指标或数据集。",
-        "limitations": "未说明有限样本下正则化方法的具体性能阈值；实证部分仅概括，未给出对比基准或量化结果；方法基于SBM假定，泛化至其它图模型未讨论。",
-        "why_relevant": "本研究针对图数据的统计推断与模型选择，与分布式推理集群通信优化（如张量并行、调度等领域）无直接关联，仅因arXiv分类包含cs.LG产生微弱匹配。"
-      },
-      "first_seen_at": "2026-05-28T09:35:48.728882+00:00",
-      "last_seen_at": "2026-05-28T13:18:49.361053+00:00",
-      "retained_from_previous_run": true
     }
   ],
   "stats": {
-    "paper_count": 2,
+    "paper_count": 1,
     "new_paper_count": 0,
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-07-11T22:46:36.350637+00:00",
+    "collection_cutoff_iso": "2026-07-12T22:47:16.271233+00:00",
     "max_per_topic": 25,
     "llm_enabled": false,
     "llm_concurrency": 2,
@@ -324,12 +247,12 @@
     "failed_fetches": 0,
     "arxiv_fetch_mode": "batch",
     "arxiv_fetch_attempts": 1,
-    "retained_paper_count": 2,
-    "retained_recent_low_count": 1,
-    "dropped_low_relevance_count": 0,
+    "retained_paper_count": 1,
+    "retained_recent_low_count": 0,
+    "dropped_low_relevance_count": 1,
     "max_stored_papers": 800,
     "max_data_bytes": 8388608,
-    "data_bytes": 17165,
+    "data_bytes": 11992,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
