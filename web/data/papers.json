@@ -1,6 +1,6 @@
 {
-  "generated_at": "Wed, 18 Nov 2026 03:19:30 +0000",
-  "generated_at_iso": "2026-11-18T03:19:30.407695+00:00",
+  "generated_at": "Thu, 19 Nov 2026 02:56:08 +0000",
+  "generated_at_iso": "2026-11-19T02:56:08.000156+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -532,7 +532,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22427v1",
@@ -631,7 +631,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11496v1",
@@ -1223,7 +1223,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22331v1",
@@ -1323,6 +1323,111 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
+      "retained_from_previous_run": true
+    },
+    {
+      "id": "2611.23779v1",
+      "source": "arXiv",
+      "title": "TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning",
+      "authors": [
+        "Pau Mateo-Bernadó",
+        "Saivenkata Nagavyjayanthi Polapragada",
+        "David Bonet",
+        "Pol Arbiol Rakuljic",
+        "Laia Mogas Pladevall",
+        "Marçal Comajoan Cara",
+        "Jesus Gonzalez-Ferrer",
+        "Jordi Abante",
+        "Daniel Mas Montserrat",
+        "David Haussler",
+        "Alexander G. Ioannidis"
+      ],
+      "summary": "Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance. We introduce TabBioMed, a large-scale benchmark of 94 curated public biomedical tabular datasets spanning electronic health records, drug discovery, genomics, transcriptomics, proteomics, metabolomics, single-cell omics, and systems biology. TabBioMed unifies these datasets through a standardized, dataset-aware preprocessing and evaluation framework, enabling reproducible comparison across classification, regression, and multi-target tasks. We benchmark 23 models across classical baselines, gradient-boosted trees, neural tabular architectures, and tabular foundation models. Foundation models deliver the strongest family-level predictive performance. However, their gains are regime-dependent: tree-based models and tuned multilayer perceptrons remain highly competitive, often dominating under inference-time or training-cost constraints. Overall, TabBioMed shows that biomedical tabular learning is strongly context-dependent, with optimal model choice depending on data regime, task type, and computational budget. We release TabBioMed with curated datasets and splits, preprocessing code, baselines, and results, providing a reproducible benchmark for practical model selection and future methods development in biomedical machine learning, available at https://github.com/AI-sandbox/TabBioMed.",
+      "published": "2026-11-18T03:35:35Z",
+      "updated": "2026-11-18T03:35:35Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "87 pages, 43 figures, including appendices and the NeurIPS paper checklist",
+      "publication_status": {
+        "status": "venue_note",
+        "label": "会议/期刊信息",
+        "venue": "NeurIPS",
+        "short_venue": "NeurIPS",
+        "source": "arXiv comment",
+        "has_publication_info": true
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23779v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23779v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.32,
+          "level": "low",
+          "reason": "关键词命中：dataset、benchmark；arXiv 分类重合：cs.LG",
+          "keyword_hits": [
+            "dataset",
+            "benchmark"
+          ]
+        },
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.206,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "low_level_dataset_benchmark",
+        "topic_name": "Low-level 图像增强数据集",
+        "score": 0.32,
+        "level": "low",
+        "reason": "关键词命中：dataset、benchmark；arXiv 分类重合：cs.LG",
+        "keyword_hits": [
+          "dataset",
+          "benchmark"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：dataset、benchmark；arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -1423,7 +1528,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.09780v1",
@@ -1810,7 +1915,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22355v1",
@@ -1907,7 +2012,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22504v1",
@@ -2001,7 +2106,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22482v1",
@@ -2096,7 +2201,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22591v1",
@@ -2196,7 +2301,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.09940v1",
@@ -2492,6 +2597,199 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23855v1",
+      "source": "arXiv",
+      "title": "RoboBuilder: Agentic Robot Co-Design with Real-world Video Feedback in the Loop",
+      "authors": [
+        "Ghadi Nehme",
+        "Dahyun Nam",
+        "Akshay Govind Srinivasan",
+        "Faez Ahmed"
+      ],
+      "summary": "Can AI agents design robots that work in the real world? We introduce RoboBuilder, a benchmark in which coding agents co-design a robot's hardware and program from standard parts, motors and a custom 3D-printed part, and every design that passes in simulation is built and tested on a physical course. Simulation alone is not enough: under public part data, none of 15 initial passing designs crossed the real course, so an agent learns the simulator from measurements it requests and videos of real runs. Across four frontier coding agents, ten obstacles at three difficulty levels, 16,427 simulations of 12,774 distinct robots and 135 physical robots built in an estimated 240 hours, agents solve nearly all easy obstacles and invent mechanisms our search baselines do not reach, but falter at harder levels, when one robot must cross every obstacle, and in the real world, where 66% of simulated passes hold across all levels. Closing the loop helps: shown a video of its real failure, an agent redesigns the robot, sometimes correcting its simulator, and removes 72% of level-1 and level-2 failures. RoboBuilder measures progress toward agents that engineer real machines. Project Page: https://ghadinehme.com/robobuilder.github.io/",
+      "published": "2026-11-18T05:02:07Z",
+      "updated": "2026-11-18T05:02:07Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23855v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23855v1",
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.287,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.AI、cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.254,
+          "level": "low",
+          "reason": "关键词命中：benchmark；arXiv 分类重合：cs.CV",
+          "keyword_hits": [
+            "benchmark"
+          ]
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.287,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.AI、cs.CV",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Can AI agents design robots that work in the real world?",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.AI、cs.CV"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2611.23843v1",
+      "source": "arXiv",
+      "title": "RePlan-VLA: Progress-Aware Replanning for Long-Horizon Vision-Language-Action Models",
+      "authors": [
+        "Apoorva Vashisth",
+        "Manav Kulshrestha",
+        "Damon Conover",
+        "Zachary Kingston",
+        "Aniket Bera"
+      ],
+      "summary": "Vision-Language-Action (VLA) models have emerged as a promising paradigm for general-purpose robotic manipulation, yet their performance often degrades on long-horizon tasks that require multiple interdependent manipulations. Instead of burdening the VLA policies with long-horizon reasoning, memory, action generation, progress tracking, and error recovery, we argue for leveraging their short-horizon manipulation capabilities within an execution-aware framework. To this end, we introduce \\textnormal{\\textbf{RePlan-VLA}}, a VLA-agnostic framework that translates a VLA's short-horizon capabilities into reliable long-horizon execution. RePlan-VLA explicitly monitors the robot's motion for progress evaluation, and adaptively revises the future plan based on observed outcomes. We preserve the underlying VLA policy entirely, requiring no additional fine-tuning. Experiments on RoboCasa365 and CALVIN benchmarks show an improvement of 21.9% and 10.4% in success rate over the next strongest baseline. We also validate our approach for real-world deployment on a Franka Research 3 robot.",
+      "published": "2026-11-18T04:49:41Z",
+      "updated": "2026-11-18T04:49:41Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "Apoorva Vashisth and Manav Kulshrestha contributed equally to this work. Prof. Zachary Kingston and Prof. Aniket Bera jointly advised this work",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23843v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23843v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.287,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.AI、cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.191,
+          "level": "low",
+          "reason": "关键词命中：benchmark；arXiv 分类重合：cs.LG",
+          "keyword_hits": [
+            "benchmark"
+          ]
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.287,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.AI、cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Vision-Language-Action (VLA) models have emerged as a promising paradigm for general-purpose robotic manipulation, yet their performance often degrades on long-horizon tasks that require multiple interdependent manipulations.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.AI、cs.LG"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22543v1",
       "source": "arXiv",
       "title": "JointGV: Structure-Aware Correction of Visual World Models with Parallel Graph Dynamics for Long-Horizon Modeling",
@@ -2589,7 +2887,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11460v1",
@@ -3389,7 +3687,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11577v1",
@@ -3585,7 +3883,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22464v1",
@@ -3689,7 +3987,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11631v1",
@@ -4084,6 +4382,103 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23810v1",
+      "source": "arXiv",
+      "title": "Continual Tool-Space Extension Learning for Multimodal Agents",
+      "authors": [
+        "Jinbae Seo",
+        "Jungin Park",
+        "Hyunsung Jang",
+        "Namkoo Ha",
+        "Jiyoung Lee",
+        "Kwanghoon Sohn"
+      ],
+      "summary": "Multimodal agents largely rely on generic tools such as cropping, search, and code execution, leaving specialist vision models outside their tool space. However, bringing such a model into an already trained agent is not straightforward. The challenge is to learn each new tool efficiently while retaining the ability to use existing ones. This work proposes COTEX, continual tool-space extension learning, that adds new tools at efficient adapter-level cost. COTEX locates two sets of parameter directions; one triggers a tool call and thereby opens a multi-turn reasoning trajectory, while the other determines which tool is chosen. The adapter of a new tool is restricted to the calling directions that leave earlier tool choices unaffected by orthogonal constraint. We further introduce a protocol that converts specialist models' existing task-specific annotations into verified tool-use trajectories. Experiments on two representative agents and three specialist tools show gains on ten vision-language benchmarks, with at most a 0.3-point drop on existing tools.",
+      "published": "2026-11-18T04:14:02Z",
+      "updated": "2026-11-18T04:14:02Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23810v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23810v1",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.256,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.AI、cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.16,
+          "level": "low",
+          "reason": "关键词命中：benchmark；arXiv 分类重合：cs.LG",
+          "keyword_hits": [
+            "benchmark"
+          ]
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.256,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.AI、cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Multimodal agents largely rely on generic tools such as cropping, search, and code execution, leaving specialist vision models outside their tool space.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.AI、cs.LG"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22537v1",
       "source": "arXiv",
       "title": "Testing World Models on Actions They Have Never Seen: Held-Out Plans, Forecast Accuracy and Price Rules in Retail",
@@ -4171,7 +4566,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22483v1",
@@ -4268,7 +4663,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22456v1",
@@ -4366,7 +4761,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22380v1",
@@ -4458,7 +4853,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.09863v1",
@@ -4746,7 +5141,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22575v1",
@@ -4843,7 +5238,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22439v1",
@@ -4936,7 +5331,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22334v1",
@@ -5030,7 +5425,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11482v1",
@@ -5529,7 +5924,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22592v1",
@@ -5626,7 +6021,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22551v1",
@@ -5716,7 +6111,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.09928v1",
@@ -5993,7 +6388,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22490v1",
@@ -6105,7 +6500,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11620v1",
@@ -6492,7 +6887,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22652v1",
@@ -6592,7 +6987,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11547v1",
@@ -6898,6 +7293,102 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23845v1",
+      "source": "arXiv",
+      "title": "ReflectScene:MLLM-Guided Closed-Loop Diffusion for 3D Indoor Scene Generation",
+      "authors": [
+        "Jiawei Shen",
+        "Jie Feng",
+        "Junpeng Zhang",
+        "Guanbin Li",
+        "Wanyi Chen",
+        "Weisheng Dong",
+        "Guangming Shi"
+      ],
+      "summary": "Text-conditioned 3D indoor scene generation requires layouts satisfying geometric, functional, and semantic constraints. However, existing diffusion methods rely primarily on static textual conditions, limiting their ability to assess evolving scenes and translate semantic discrepancies into executable object-level corrections. MLLM-based post-hoc refinement provides semantic feedback but remains decoupled from denoising, potentially disrupting scene coherence.We propose ReflectScene, an MLLM-guided closed-loop diffusion framework. First, we introduce Hierarchical Prior-Grounded Scene Understanding that aligns structured layouts with multi-view visual evidence, to interpret object-specific context and scene global semantics via a frozen multi-modal large language model (MLLM). Second, we propose MLLM-Guided Semantic Reward Evaluation to distill MLLM's diagnoses and assessments on possible candidate corrections into a lightweight Reward Predictor, enabling correction decision making with reduced computation burden. Finally, Decision-Conditioned Trajectory-Consistent Diffusion is proposed to integrate selected corrections through transient conditioning and persistent clean-estimate projection, correcting object layout in the generated scene while preserving non-target arrangements throughout denoising.Experiments on 3D-FRONT demonstrate improved functional consistency and semantic alignment while maintaining competitive generation quality and diversity.",
+      "published": "2026-11-18T04:50:50Z",
+      "updated": "2026-11-18T04:50:50Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "10 pages, 3 figures",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23845v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23845v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.225,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.AI、cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.225,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.AI、cs.CV",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Text-conditioned 3D indoor scene generation requires layouts satisfying geometric, functional, and semantic constraints.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.AI、cs.CV"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22709v1",
       "source": "arXiv",
       "title": "Know When to Zoom: How Small Is Too Small for Vision-Language Models?",
@@ -6986,7 +7477,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22673v1",
@@ -7083,7 +7574,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22458v1",
@@ -7179,7 +7670,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22438v1",
@@ -7276,7 +7767,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22434v1",
@@ -7369,7 +7860,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11526v1",
@@ -7572,6 +8063,206 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23840v1",
+      "source": "arXiv",
+      "title": "TOGBench: Benchmarking and Improving Tiny-Object Generation Fidelity in Aerial Imagery",
+      "authors": [
+        "Chanhwi Jeong",
+        "Dongmin You",
+        "Seungwook Kim"
+      ],
+      "summary": "Advances in deep generative models now enable the synthesis of realistic imagery. However, aerial imagery is dominated by tiny objects, such as vehicles, ships, and aircraft, which occupy only a few pixels owing to the overhead, wide-area nature of aerial imaging. Existing generative models struggle substantially more with tiny objects than with larger ones. This limitation has been overlooked, as prior work on generative evaluation emphasizes prompt following or human preference rather than whether small objects are rendered faithfully. To address this gap, we introduce TOGBench, a quantitative, object-level benchmark for evaluating tiny-object generation fidelity in aerial imagery. We further propose two simple train-/inference-time techniques that improve the ability of layout-to-image generators to render small objects, raising their performance on TOGBench.",
+      "published": "2026-11-18T04:45:57Z",
+      "updated": "2026-11-18T04:45:57Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "Accepted to WACV 2027 Round 2. 20 pages, 7 figures",
+      "publication_status": {
+        "status": "venue_note",
+        "label": "会议/期刊信息",
+        "venue": "WACV 2027",
+        "short_venue": "WACV 2027",
+        "source": "arXiv comment",
+        "has_publication_info": true
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23840v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23840v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.223,
+          "level": "low",
+          "reason": "关键词命中：benchmark；arXiv 分类重合：cs.CV",
+          "keyword_hits": [
+            "benchmark"
+          ]
+        },
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.194,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.AI、cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "low_level_dataset_benchmark",
+        "topic_name": "Low-level 图像增强数据集",
+        "score": 0.223,
+        "level": "low",
+        "reason": "关键词命中：benchmark；arXiv 分类重合：cs.CV",
+        "keyword_hits": [
+          "benchmark"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Advances in deep generative models now enable the synthesis of realistic imagery.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：benchmark；arXiv 分类重合：cs.CV"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2611.23807v1",
+      "source": "arXiv",
+      "title": "Sightline: Long-Window Speculative Decoding for Fast SVG Generation",
+      "authors": [
+        "Yanchao Li",
+        "Ben Gao",
+        "Jiaqing Xie",
+        "Yusu Zhang",
+        "Beilun Wang",
+        "Yanbo Wang",
+        "Xiaohua Xu",
+        "Nanqing Dong",
+        "Tianfan Fu",
+        "Zhongyu Huang"
+      ],
+      "summary": "Scalable Vector Graphics (SVG) generation models write a graphic as code with one forward pass per token, so drawing is slow. Speculative decoding speeds them up losslessly, and block drafters guess many tokens per pass. On SVG, many of their rounds accept the whole draft and end only at the verification window. We find that their misses are rare and clumped, and that they stay accurate far deeper into a block than on natural language. A run-length identity and three propositions show that a longer window pays once the candidates are wide, up to the drafter's horizon. We propose Sightline, which pairs a window as long as the drafter's horizon with a draft tree wide enough to fill it. Experiments cover text-to-SVG and image-to-SVG with three models on six benchmarks from MMSVG, MMSVG-2M and SArena. In every setting, Sightline is the fastest of the compared lossless decoders. On SArena, it stays the fastest when every decoder shares one loop control. It also leads in almost every setting of six models from four other families, which write SVG code, compressed SVG tokens or Lottie JSON. Analyses trace the lead to rounds that shorter windows cut off, both in loop-free content and in loops. Speculative decoding also saves time for choosing samples by rendering, which beats choosing by likelihood. These results suggest that speculative decoding on vector graphics should verify as far as the drafter sees. Code and data are available at https://github.com/LiZaiyuan0619/Sightline.",
+      "published": "2026-11-18T04:12:31Z",
+      "updated": "2026-11-18T04:12:31Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "45 pages, 23 figures, 34 tables. Code: https://github.com/LiZaiyuan0619/Sightline",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23807v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23807v1",
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.223,
+          "level": "low",
+          "reason": "关键词命中：benchmark；arXiv 分类重合：cs.CV、cs.LG",
+          "keyword_hits": [
+            "benchmark"
+          ]
+        },
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.194,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV、cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV、cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV、cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV、cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "low_level_dataset_benchmark",
+        "topic_name": "Low-level 图像增强数据集",
+        "score": 0.223,
+        "level": "low",
+        "reason": "关键词命中：benchmark；arXiv 分类重合：cs.CV、cs.LG",
+        "keyword_hits": [
+          "benchmark"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Scalable Vector Graphics (SVG) generation models write a graphic as code with one forward pass per token, so drawing is slow.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：benchmark；arXiv 分类重合：cs.CV、cs.LG"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22635v1",
       "source": "arXiv",
       "title": "A Quantum Support Vector Regression Framework for Missing Data Imputation in Ship Performance Data",
@@ -7668,7 +8359,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22472v1",
@@ -7770,7 +8461,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22450v1",
@@ -7867,7 +8558,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22343v1",
@@ -7963,7 +8654,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11605v1",
@@ -9060,6 +9751,104 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23813v1",
+      "source": "arXiv",
+      "title": "SWIFT: Slow World, Instant Freshness, and Timely Action for Asynchronous Autonomous Driving",
+      "authors": [
+        "Jiazhe Wang",
+        "Tianyi Yang",
+        "Ruihang Li",
+        "Fan Lu",
+        "Xianming Zeng",
+        "Jianyun Xu",
+        "Xingliang Liu",
+        "Lei Yang"
+      ],
+      "summary": "Driving scenes keep changing during model computation, making both observation freshness and action-delivery time central to world-action planning. To retain rich generative world priors in autonomous driving without stalling real-time control, we present SWIFT (Slow World, Instant Freshness, and Timely action), a deployment-oriented asynchronous world-action system that moves world updates off the observation-to-action critical path. On a background GPU, a slow Video DiT streams surround-view history into read-only predictive world context, trained with a predictive span that covers both the update interval and background world computation. On a foreground GPU, a lightweight freshness carrier encodes current surround-view images into a gated key/value bank at every step, letting a fast Action DiT combine live visual feedback with the latest completed world context without waiting. On open-loop NAVSIM, SWIFT reaches 94.2 PDMS at 198.4 ms per decision with a trajectory scorer; on closed-loop Bench2Drive, it achieves an 80.30 Driving Score at 109.9 ms foreground latency. SWIFT further transfers to the Waymo E2E hidden test (8.0050 Rater Feedback Score) and nuScenes (0.54 m mean endpoint error, 0.03% mean collision rate). Across all four benchmarks, SWIFT achieves the best results among compared world-action methods, establishing a favorable accuracy-latency trade-off.",
+      "published": "2026-11-18T04:17:17Z",
+      "updated": "2026-11-18T04:17:17Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23813v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23813v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.219,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.175,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.16,
+          "level": "low",
+          "reason": "关键词命中：benchmark；arXiv 分类重合：cs.CV",
+          "keyword_hits": [
+            "benchmark"
+          ]
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "super_resolution",
+        "topic_name": "图像超分辨率",
+        "score": 0.219,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.CV",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Driving scenes keep changing during model computation, making both observation freshness and action-delivery time central to world-action planning.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.CV"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22669v1",
       "source": "arXiv",
       "title": "Beyond the Camera: A Tri-Modal Driving World Model for Future RGB, Thermal, and LiDAR Forecasting in Adverse Weather",
@@ -9153,7 +9942,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22548v1",
@@ -9247,7 +10036,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22351v1",
@@ -9339,7 +10128,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11706v1",
@@ -9619,6 +10408,291 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23773v1",
+      "source": "arXiv",
+      "title": "A Systematic Analysis of a Small Optimal Subspace for Physics-Informed Neural Networks: $n$-DAS $\\subset \\mathbb{R}^p$",
+      "authors": [
+        "Ahmad AliAhmad",
+        "Khemraj Shukla"
+      ],
+      "summary": "The search for a low-dimensional subspace that governs neural network training has been a persistent goal in optimization. Yet subspaces defined by Hessian eigenvalue magnitude, such as the dominant/bulk decomposition underlying Dom-SGD and Bulk-SGD, have repeatedly failed to capture where optimization takes place, and adaptive Krylov-based alternatives built on energy-fraction thresholds show promise but still struggle at lower eigenmodes. We argue this failure is structural: the directions of highest curvature are not, in general, the directions along which training moves. We introduce the dominant aligned subspace (DAS), constructed from a full eigendecomposition of the Hessian but selected by gradient alignment rather than eigenvalue magnitude, as a tool for understanding optimization dynamics and a foundation for designing methods that exploit them. To expose this structure under the hardest conditions, we use physics-informed neural networks (PINNs) as a testbed: differential operators from the parabolic, elliptic, and hyperbolic classes induce severely ill-conditioned, anisotropic loss landscapes. Across Poisson, heat, wave, and viscous Burgers benchmarks DAS-restricted training with a line search matches full-space training even where the projected Hessian remains ill-conditioned, showing empirically that convergence does not require all Hessian eigendirections but only a low-dimensional, gradient-aligned subset. We extend the analysis to Gauss-Newton within the DAS and discuss what this structure implies for future subspace-aware optimizers.",
+      "published": "2026-11-18T03:31:06Z",
+      "updated": "2026-11-18T03:31:06Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "57 pages, 17 figures, 7 tables. In the title, n-DAS denotes an optimizer of order n restricted to the dominant aligned subspace (DAS): 1-DAS for first-order and 2-DAS for second-order methods",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23773v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23773v1",
+      "categories": [
+        "cs.LG",
+        "math.AP",
+        "math.OC"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.206,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.129,
+          "level": "low",
+          "reason": "关键词命中：benchmark；arXiv 分类重合：cs.LG",
+          "keyword_hits": [
+            "benchmark"
+          ]
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.206,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "The search for a low-dimensional subspace that governs neural network training has been a persistent goal in optimization.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2611.23770v1",
+      "source": "arXiv",
+      "title": "DetectViT: Test-time Backdoor Detection for Vision Transformers via Inter-Head Attention Discrepancy",
+      "authors": [
+        "Siquan Huang",
+        "Yijiang Li",
+        "Xingfu Yan",
+        "Ningzhi Gao",
+        "Leyu Shi",
+        "Ying Gao"
+      ],
+      "summary": "Vision Transformers (ViTs) now underpin the visual encoders of most multimodal models, but this success comes at a cost: relying on third-party pretrained checkpoints leaves these systems open to backdoor attacks. Existing test-time detection methods rely on either the predicted label or intermediate embeddings, limiting their applicability across diverse tasks and incurring substantial computational overhead. In this work, we study how backdoor triggers affect the multi-head attention mechanism of ViTs and identify two distinct anomalous patterns: $\\textit{complete attention hijacking}$, causing the attention to exhibit abnormally high inter-head spatial overlap, and $\\textit{partial attention hijacking}$, causing an abnormally large variance in the concentration of the attention distribution. Motivated by these findings, we propose $\\textbf{DetectViT}$, a test-time backdoor detection method that requires neither training data, model outputs, nor any prior knowledge of the trigger. DetectViT quantifies the two hijacking phenomena via an inter-head consistency score and an inter-head entropy variance score, with thresholds estimated from a small out-of-distribution (OOD) calibration set drawn from an arbitrary source. Across four representative attacks, diverse architectures (DeiT, CLIP, and LLaVA), and downstream tasks (image classification and captioning), DetectViT substantially outperforms all baselines with as few as 64--128 OOD calibration samples, achieving a true positive rate of $100\\%$ and a false positive rate of $0.17\\%$ on BadCLIP. Notably, it introduces negligible additional overhead by relying solely on attention weights already computed during inference. Code is available at: https://github.com/siquanhuang/DetectViT.",
+      "published": "2026-11-18T03:26:33Z",
+      "updated": "2026-11-18T03:26:33Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "Accepted to NeurIPS 2026",
+      "publication_status": {
+        "status": "venue_note",
+        "label": "会议/期刊信息",
+        "venue": "NeurIPS 2026",
+        "short_venue": "NeurIPS 2026",
+        "source": "arXiv comment",
+        "has_publication_info": true
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23770v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23770v1",
+      "categories": [
+        "cs.CV",
+        "cs.CR"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.206,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.188,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.206,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.CV",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Vision Transformers (ViTs) now underpin the visual encoders of most multimodal models, but this success comes at a cost: relying on third-party pretrained checkpoints leaves these systems open to backdoor attacks.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.CV"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2611.23769v1",
+      "source": "arXiv",
+      "title": "Keep the Reasoning, Read the Image: On-Demand Visual KV for Multi-Turn Reasoning VLMs",
+      "authors": [
+        "Ziyi Wang",
+        "Xiyue Zhang",
+        "Bing Hu",
+        "Guangmin Song",
+        "Chenyi Zhang",
+        "Li Wang"
+      ],
+      "summary": "Reasoning vision-language models (VLMs) think for thousands of tokens before they answer, and retention policies keep the KV cache affordable by pruning it as the reasoning grows. We find that this pruning sacrifices the image in multi-turn conversations: the image and the reasoning share one budget, so the growing reasoning crowds the visual entries out. A chart question that loses 8 points to the full cache when asked first loses 24 points when asked after a round of reasoning. Protecting a small visual reserve from eviction recovers most of this loss, while adding the same slots to the shared budget recovers considerably less. The image therefore lacks protection, not capacity. Based on this finding, we propose ShelfKV, a training-free method that works on top of existing retention policies. It keeps every visual entry in CPU memory and, at each decoding step, swaps the visual entries that the current query scores highest into the attention slots of the text entries it scores lowest. The image is never evicted, yet it occupies attention slots only while it is read. We evaluate ShelfKV on four benchmarks, three of them conversational, with two retention policies and two reasoning VLMs. In conversations, it improves the strongest existing policy, DBTrimKV, by up to 20.3 points at matched GPU memory, and still leads by 8.7 points when DBTrimKV uses twice the memory. It also consistently outperforms a fixed visual reserve of matched GPU memory in these settings, without hurting accuracy on standalone questions. These results show that the image should be protected from the reasoning but read only on demand.",
+      "published": "2026-11-18T03:24:39Z",
+      "updated": "2026-11-18T03:24:39Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23769v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23769v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.206,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.16,
+          "level": "low",
+          "reason": "关键词命中：benchmark；arXiv 分类重合：cs.CV",
+          "keyword_hits": [
+            "benchmark"
+          ]
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.206,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.CV",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Reasoning vision-language models (VLMs) think for thousands of tokens before they answer, and retention policies keep the KV cache affordable by pruning it as the reasoning grows.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.CV"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22589v1",
       "source": "arXiv",
       "title": "Adaptive LLM-Driven Honeypots vs. LLM-Driven Attackers: Does Narrative Coherence Improve Deception?",
@@ -9710,7 +10784,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22506v1",
@@ -9803,7 +10877,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22497v1",
@@ -9905,7 +10979,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22429v1",
@@ -9996,7 +11070,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22418v1",
@@ -10097,7 +11171,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22415v1",
@@ -10197,7 +11271,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22329v1",
@@ -10287,7 +11361,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22318v1",
@@ -10381,7 +11455,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11646v1",
@@ -11897,7 +12971,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11669v1",
@@ -12098,6 +13172,103 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23825v1",
+      "source": "arXiv",
+      "title": "Learning Martial Arts Motion Skills for Animating Opponents in VR Sparring Games",
+      "authors": [
+        "Jiqing Wen",
+        "Qixuan Shi",
+        "Robert LiKamWa",
+        "Pavan Turaga"
+      ],
+      "summary": "Animating virtual opponents is an important yet challenging task in game development. In martial arts games, opponent motions must not only be physically plausible but also exhibit appropriate technique, timing, transitions, and target-directed intent. Traditional game animations often rely on handcrafted clips, state machine transitions, and procedural adjustments, which can be labor-intensive and may limit the behavioral diversity of non-player characters. This paper presents a martial arts motion skills learning framework for character animation in virtual sparring games. Inspired by Tang Soo Do, we collected a martial arts motion capture dataset containing isolated attacking and defending techniques, technique combinations and transitions, and contextual sparring variations. We first pretrained a reusable repertoire of martial arts motion skills from the captured data using reinforcement learning (RL) with adversarial style rewards, and then adapted these skills with task-specific rewards for target-directed striking and threat-aware evasion. We evaluated the motions generated by the learned policy through a user study, in which participants assessed their physical plausibility, smoothness, and martial arts form. To demonstrate their applicability to interactive gameplay, we developed a VR sparring prototype for Meta Quest headsets. The prototype combines policy-generated motion clips with lightweight state-based control to support interactive opponent behavior. Together, these findings support the feasibility of using a learned martial arts skill repertoire as a motion foundation for animating opponents in VR sparring games.",
+      "published": "2026-11-18T04:26:30Z",
+      "updated": "2026-11-18T04:26:30Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23825v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23825v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.MM",
+        "cs.RO"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.194,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.AI、cs.MM",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.16,
+          "level": "low",
+          "reason": "关键词命中：dataset；arXiv 分类重合：cs.MM",
+          "keyword_hits": [
+            "dataset"
+          ]
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.MM",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.MM",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.MM",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.194,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.AI、cs.MM",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Animating virtual opponents is an important yet challenging task in game development.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.AI、cs.MM"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22596v1",
       "source": "arXiv",
       "title": "Propose with the Gradient, Accept with the Loss: One Hedged Attack for Pixel-Sparse Robustness",
@@ -12187,7 +13358,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22563v1",
@@ -12285,7 +13456,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22541v1",
@@ -12381,7 +13552,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22495v1",
@@ -12484,7 +13655,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22446v1",
@@ -12585,7 +13756,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22330v1",
@@ -12678,7 +13849,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11617v1",
@@ -13549,6 +14720,104 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23815v1",
+      "source": "arXiv",
+      "title": "CAFE-AQI: Coverage-Aware Day-Ahead AQI Forecasting with Early Warning and Conformal Uncertainty in Bangladesh",
+      "authors": [
+        "Md Rafid Islam",
+        "Rafsan Jany",
+        "Rafid Bin Zaman",
+        "Mohammad Fahim Islam",
+        "Hafiz Abdur Rahman"
+      ],
+      "summary": "Next-day air quality forecasting often assumes city records are equally complete and independent. However, an audit of a large Bangladesh dataset revealed a sharp coverage expansion after August 2022 and showed that 103 city labels correspond to only 61 unique AQI trajectories. To address these issues, this paper presents CAFE-AQI, a coverage-aware framework for forecasting next-day maximum AQI. It also estimates the probability of Unhealthy-or-worse conditions (AQI >= 151). Data were divided chronologically into training (2022-2023), calibration (2024), and testing (2025). To prevent duplicate records from dominating training and evaluation, identical trajectories were weighted. The framework combines temporal and pollutant features with a five-neighbor spatial context. It also includes a class-balanced warning head and risk-conditional conformal calibration aimed at providing early warnings and prediction intervals. Evaluation on the duplicate-balanced 2025 data gave an MAE of 9.76, an RMSE of 15.04, and an R-squared value of 0.910 for CAFE-AQI. Its MAE was 3.63 AQI lower than persistence (95% CI: 3.49-3.76), with lower errors in each of the 61 trajectory groups. For unhealthy-air warnings, the F1-score was 0.908 and the AUROC was 0.982. The nominal 90% intervals covered 92.09% of observations. When an entire spatial block was excluded from training, the MAE remained 10.66, showing that the lightweight model transferred reasonably well to unseen locations.",
+      "published": "2026-11-18T04:18:24Z",
+      "updated": "2026-11-18T04:18:24Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23815v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23815v1",
+      "categories": [
+        "cs.LG",
+        "stat.AP"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.191,
+          "level": "low",
+          "reason": "关键词命中：dataset；arXiv 分类重合：cs.LG",
+          "keyword_hits": [
+            "dataset"
+          ]
+        },
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.113,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "low_level_dataset_benchmark",
+        "topic_name": "Low-level 图像增强数据集",
+        "score": 0.191,
+        "level": "low",
+        "reason": "关键词命中：dataset；arXiv 分类重合：cs.LG",
+        "keyword_hits": [
+          "dataset"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Next-day air quality forecasting often assumes city records are equally complete and independent.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：dataset；arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22508v1",
       "source": "arXiv",
       "title": "Reliability-Driven Feature Correction for Hyperspectral and LiDAR Classification",
@@ -13644,7 +14913,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22395v1",
@@ -13740,7 +15009,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22367v1",
@@ -13836,7 +15105,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11683v1",
@@ -15095,7 +16364,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11670v1",
@@ -15929,6 +17198,288 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23824v1",
+      "source": "arXiv",
+      "title": "Evidence-Based Credit Assignment for Search-Augmented Language Models",
+      "authors": [
+        "Wen Wang",
+        "Jindong Wang",
+        "Jiahua Bao",
+        "Tu Yongsiqi",
+        "Yihao Liu",
+        "Junwei He",
+        "Wenkui Fan"
+      ],
+      "summary": "Reinforcement learning from terminal answer rewards enables search-augmented language models to interleave reasoning and retrieval without step-level annotations, yet outcome supervision assigns identical credit to every search in a trajectory regardless of whether it retrieved useful information. This limitation is especially severe when all sampled rollouts for a question fail, collapsing group-centered outcome advantages to zero even when trajectories gather markedly different evidence. We present Evidence-based Credit Assignment (ECA), which augments terminal outcome rewards with a training-only auxiliary signal measuring how retrieved documents improve the likelihood of a reference answer. Rather than scoring the full dialogue prefix, ECA queries a frozen snapshot of the current policy under an evidence-only prompt containing solely the question and the deduplicated documents observed so far, isolating the utility of retrieved passages from surface variations in generated thoughts or search queries. Within this framework, we compare two return formulations, ECA-Step (which accumulates step-clipped potential increments) and ECA-Horizon (which preserves the telescoping horizon gain in potential), paired with cross-fold group normalization, novelty gating, and search-local token assignment. Across seven Search QA benchmarks, ECA-Horizon improves strict macro exact match over an outcome-only GRPO baseline by 1.03 and 4.80 percentage points on Qwen2.5-3B- and 7B-Instruct, respectively, outperforming both RLOO and GiGPO. Zero-shot evaluation on MultiHop-RAG further demonstrates strong transfer to multi-hop inference queries.",
+      "published": "2026-11-18T04:24:51Z",
+      "updated": "2026-11-18T04:24:51Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "16 pages, 4 figures. Includes supplementary material",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23824v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23824v1",
+      "categories": [
+        "cs.AI"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.175,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.AI",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.098,
+          "level": "low",
+          "reason": "关键词命中：benchmark",
+          "keyword_hits": [
+            "benchmark"
+          ]
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.031,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.0,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.0,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.175,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.AI",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Reinforcement learning from terminal answer rewards enables search-augmented language models to interleave reasoning and retrieval without step-level annotations, yet outcome supervision assigns identical credit to every search in a trajectory regardless of whether it retrieved useful information.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.AI"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2611.23793v1",
+      "source": "arXiv",
+      "title": "ROBIN++: Unified Copyright Protection and Tamper Localization for Diffusion Models via Dual-Domain Synergistic Watermarking",
+      "authors": [
+        "Huayang Huang",
+        "Siqi Zeng",
+        "Qian Wang",
+        "Bo Du",
+        "Yu Wu"
+      ],
+      "summary": "Digital watermarking provides a promising solution for verifying the provenance and integrity of generated content. However, existing methods often suffer from an inherent trade-off between copyright robustness and localization sensitivity due to the entanglement of conflicting signals within a single domain. In this paper, we propose ROBIN++, a paradigm that shifts from single-domain entanglement to a Dual-Domain Synergistic design. Our key insight is to explicitly decouple robustness and fragility during injection by assigning them to distinct domains, while re-coupling them for mutual reinforcement during verification. Specifically, we introduce an Adversarial Optimization Algorithm to inject a frequency-domain copyright watermark during generation, maximizing extraction robustness without visual artifacts. Complementarily, a Content-Aware Perturbation generator is integrated into the latent space to inject the spatial-domain localization watermark, ensuring sensitivity to spatial tampering with minimal interference to the copyright watermark. During verification, we propose a dual-branch synergistic detector that facilitates Frequency-to-Spatial Synergy, where robust spectral priors act as global anchors for local anomaly detection. Conversely, a Spatial-to-Frequency Refinement strategy is employed to rectify corrupted latent features using predicted tamper masks. Extensive experiments show that ROBIN++ significantly outperforms existing approaches in both copyright recovery and tamper localization accuracy, effectively mitigating the long-standing trade-off between the two tasks. Code is available at https://github.com/Hannah1102/ROBIN.",
+      "published": "2026-11-18T03:59:21Z",
+      "updated": "2026-11-18T03:59:21Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "2026 TPAMI",
+      "publication_status": {
+        "status": "venue_note",
+        "label": "会议/期刊信息",
+        "venue": "TPAMI",
+        "short_venue": "TPAMI",
+        "source": "arXiv comment",
+        "has_publication_info": true
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23793v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23793v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.175,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.175,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.CV",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Digital watermarking provides a promising solution for verifying the provenance and integrity of generated content.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.CV"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2611.23788v1",
+      "source": "arXiv",
+      "title": "Geometry-bridge flow matching for blind rigid-motion correction in head cone-beam CT",
+      "authors": [
+        "Sungho Yun",
+        "Seungryong Cho"
+      ],
+      "summary": "Rigid motion of a patient head during head cone-beam CT (CBCT) scan can degrade image quality and complicate recovery of accurate anatomical structures from the measured projections. We present a 3D flow-matching prior approach that learns the image changes induced by motion. Its geometry-bridge connects motion-corrupted and motion-free Feldkamp-Davis-Kress (FDK) reconstructed images of the same source volume through progressively reduced simulated motion. The forward projector's geometry derivative supplies analytic velocity targets along this path. A plug-and-play loop encompasses the learned image updates together with spline-based pose estimation, conjugate-gradient data consistency, and image total-variation regularization. Both the refined image volume and the FDK reconstructed image volume at the estimated poses are evaluated. On simulated 360-view scans from 30 held-out CQ500 patients with nominal per-component motion amplitudes within 10 mm / 10 degrees, the framework achieved state-of-the-art image reconstruction quality and motion accuracy in comparison with other methos such as learned autofocus and diffusion-based joint reconstruction. Mean peak signal-to-noise ratio (PSNR) reached 37.1 dB and mean detector-plane reprojection error (RPE) was 0.27 mm. With matched endpoints at the inference settings, the geometry bridge improved PSNR by 1.6 dB and reduced RPE by 33% relative to image-linear training. With 50 prior updates and coarse-to-fine motion estimation, total processing time averaged 9.1 minutes per patient on an RTX A6000.",
+      "published": "2026-11-18T03:51:56Z",
+      "updated": "2026-11-18T03:51:56Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23788v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23788v1",
+      "categories": [
+        "physics.med-ph",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.175,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.175,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.CV",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Rigid motion of a patient head during head cone-beam CT (CBCT) scan can degrade image quality and complicate recovery of accurate anatomical structures from the measured projections.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.CV"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22691v1",
       "source": "arXiv",
       "title": "Making the World React Realistically: A Closed-Loop Interactive World Model for Autonomous Driving",
@@ -16022,7 +17573,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22668v1",
@@ -16118,7 +17669,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22595v1",
@@ -16212,7 +17763,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22564v1",
@@ -16306,7 +17857,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22557v1",
@@ -16401,7 +17952,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22480v1",
@@ -16493,7 +18044,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22362v1",
@@ -16593,7 +18144,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22350v1",
@@ -16689,7 +18240,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22328v1",
@@ -16786,7 +18337,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11704v1",
@@ -18582,7 +20133,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22611v1",
@@ -18674,7 +20225,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22597v1",
@@ -18769,7 +20320,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22515v1",
@@ -18862,7 +20413,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11692v1",
@@ -19910,6 +21461,294 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23822v1",
+      "source": "arXiv",
+      "title": "Mapping the Design Space of Feature Sampling for Optical Flow",
+      "authors": [
+        "Liping Zhang"
+      ],
+      "summary": "The computation of correlation features is crucial for optical flow estimation. Existing methods (e.g., RAFT) perform fixed-radius lookups on a cost volume, yielding a set of correlation features for each position; alternatively, WAFT performs single-point feature indexing, yielding one correlation feature vector per position. None of them designs a suitable correlation feature sampling scheme for each position according to regional characteristics. Our insight is that not every position requires the same sampling scheme. Applying an identical sampling scheme to every position is either redundant or insufficient and ignores the specific characteristics of the corresponding region. This paper rethinks the design of feature sampling and investigates the following question: should the support of feature sampling---i.e., the extent and directions over which evidence is aggregated---be learned separately for each query position? To study this question, we propose SAGE (Sampling with Anisotropic Gaussian Expectation). This method replaces single-point sampling with a per-pixel anisotropic Gaussian expectation on a fixed candidate grid centered on the current optical flow estimate. A positive-definite precision matrix controls the scale, anisotropy, and orientation of the sampling support, with single-point sampling included as its limiting case. Consequently, the sampling support becomes an explicit and analyzable design variable and provides a principled way to analyze how directional feature aggregation affects correspondence learning. Extensive experiments show that SAGE, while adding only 1.5% multiply-accumulate operations (MACs), effectively improves zero-shot cross-dataset generalization. When trained only on FlyingChairs and FlyingThings, SAGE reduces the end-point error (EPE) by 24.2% and 16.4% on Sintel clean and final, and reduces KITTI F1-epe and F1-all by 7.2% and 11.6%.",
+      "published": "2026-11-18T04:23:49Z",
+      "updated": "2026-11-18T04:23:49Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23822v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23822v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.16,
+          "level": "low",
+          "reason": "关键词命中：dataset；arXiv 分类重合：cs.CV",
+          "keyword_hits": [
+            "dataset"
+          ]
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.113,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "low_level_dataset_benchmark",
+        "topic_name": "Low-level 图像增强数据集",
+        "score": 0.16,
+        "level": "low",
+        "reason": "关键词命中：dataset；arXiv 分类重合：cs.CV",
+        "keyword_hits": [
+          "dataset"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "The computation of correlation features is crucial for optical flow estimation.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：dataset；arXiv 分类重合：cs.CV"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2611.23808v1",
+      "source": "arXiv",
+      "title": "PReMind: When Personal Memory Meets Visual Hazards",
+      "authors": [
+        "Yeongtak Oh",
+        "Donghyeok Lee",
+        "Joonhee Oh",
+        "Jaewon Jeong",
+        "Sungroh Yoon"
+      ],
+      "summary": "Personalized vision-language assistants use visual observations and personal memories to provide advice tailored to the user. When the observed scene contains a physical hazard, personal context, such as allergies, medical conditions, or mobility constraints, can change what help is appropriate. Responding appropriately therefore requires recognizing the visible hazard and applying the relevant person's information. We introduce PReMind-Bench, a diagnostic benchmark that evaluates this combination across diverse hazards and personal-memory conditions. It separately measures memory access, grounding, abstention, and hazard response, and assesses joint success on interdependency cases. Existing models often satisfy one requirement while failing the other, and training only for safety or personalization leaves a gap in joint success. We therefore propose PReMind, a two-phase reinforcement learning framework that combines on-demand and forced-call interactions (memory always retrieved) to jointly train grounded memory use and hazard response. At 4B, PReMind raises joint success from 12.9% to 28.6% over its base on the interdependency set and improves hazard adequacy and correct abstention on the main test. Joint-success gains persist under forced-call evaluation and under a second LLM judge across three Phase II seeds; averaged over these seeds, joint success also improves on unseen hazard groups. These findings highlight the need to evaluate and train personal assistants to connect visual evidence with the relevant person's context.",
+      "published": "2026-11-18T04:13:29Z",
+      "updated": "2026-11-18T04:13:29Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "Project page: https://github.com/oyt9306/PReMind",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23808v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23808v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.16,
+          "level": "low",
+          "reason": "关键词命中：benchmark；arXiv 分类重合：cs.CV",
+          "keyword_hits": [
+            "benchmark"
+          ]
+        },
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.144,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "low_level_dataset_benchmark",
+        "topic_name": "Low-level 图像增强数据集",
+        "score": 0.16,
+        "level": "low",
+        "reason": "关键词命中：benchmark；arXiv 分类重合：cs.CV",
+        "keyword_hits": [
+          "benchmark"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Personalized vision-language assistants use visual observations and personal memories to provide advice tailored to the user.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：benchmark；arXiv 分类重合：cs.CV"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2611.23777v1",
+      "source": "arXiv",
+      "title": "STORM: A Lightweight Structure-Free Model for Binding Affinity Prediction",
+      "authors": [
+        "Ayush Pandit",
+        "Rohan V. Koodli",
+        "Wei Deng",
+        "Roxana Daneshjou",
+        "Ron O. Dror"
+      ],
+      "summary": "Accurately predicting a small molecule's binding affinity to a protein, a critical task in drug discovery, remains challenging. Physics-based approaches like free-energy perturbation (FEP) have very high computational costs and require expert setup. Recent machine learning--based cofolding models have reported accuracy approaching that of FEP---and at least one of them, Boltz-2, has already been widely adopted for affinity prediction---but they remain expensive for large computational screens and even more expensive for retraining on newly collected experimental data. To address these challenges, we introduce STORM: Similarity Transfer from Observed Reference Molecules. STORM is a fast, simple machine learning model that ensembles many small model fusions of diverse protein and molecule representations for binding affinity prediction. Trained on the same data, STORM matches or exceeds the accuracy of Boltz-2 on multiple evaluation datasets, while delivering a speed improvement of over five orders of magnitude for both inference and training. Our results also suggest opportunities to substantially improve affinity prediction accuracy by integrating historical experimental affinity data with structural and biophysical information.",
+      "published": "2026-11-18T03:34:08Z",
+      "updated": "2026-11-18T03:34:08Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "9 pages, 3 figures",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23777v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23777v1",
+      "categories": [
+        "q-bio.QM",
+        "cs.LG"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.16,
+          "level": "low",
+          "reason": "关键词命中：dataset；arXiv 分类重合：cs.LG",
+          "keyword_hits": [
+            "dataset"
+          ]
+        },
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.144,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "low_level_dataset_benchmark",
+        "topic_name": "Low-level 图像增强数据集",
+        "score": 0.16,
+        "level": "low",
+        "reason": "关键词命中：dataset；arXiv 分类重合：cs.LG",
+        "keyword_hits": [
+          "dataset"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Accurately predicting a small molecule's binding affinity to a protein, a critical task in drug discovery, remains challenging.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：dataset；arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22708v1",
       "source": "arXiv",
       "title": "Cross-cultural Adaptation of Recipes for Low-Resource Languages: A Benchmark and Multilingual Culinary Lexicon for Hausa, Yorùbá, and Igbo",
@@ -20006,7 +21845,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22645v1",
@@ -20101,7 +21940,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22470v1",
@@ -20200,7 +22039,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11694v1",
@@ -20885,6 +22724,191 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23857v1",
+      "source": "arXiv",
+      "title": "Neural Memory Orchestration",
+      "authors": [
+        "Michael Zizov",
+        "Boris Morose"
+      ],
+      "summary": "Modern HPC workloads increasingly stall on the memory hierarchy rather than on compute, and page faults from mmap'd files, swap, and tiered memory are a growing fraction of wall time. Heuristic prefetchers in the kernel handle stride-like and temporally clustered patterns well but degrade sharply on the irregular, data-dependent access streams typical of these workloads. Learned prefetchers have been shown to capture such patterns in simulation but have not been taken to a deployed pipeline running against live workloads on real hardware. We present Overseer, an end-to-end learned page-prefetching system. An eBPF collector observes page faults on the target host, a transformer predictor (OverNet) runs on network-attached inference hardware and emits future page addresses, and a kernel-resident enforcer materializes those pages into the target's address space before they are demanded. OverNet encodes fault sequences through per-instance ordinal ranks over deltas, which lets a single trained model serve any target process without retraining. On two page-fault-heavy workloads, Overseer reduces runtime by roughly 35% on Hilbert-curve traversal and by roughly an order of magnitude on dense matrix multiplication, with corresponding reductions in major-fault counts.",
+      "published": "2026-11-18T05:02:56Z",
+      "updated": "2026-11-18T05:02:56Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "10 pages, 9 figures",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23857v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23857v1",
+      "categories": [
+        "cs.DC",
+        "cs.LG",
+        "cs.OS"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.113,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "low_level_dataset_benchmark",
+        "topic_name": "Low-level 图像增强数据集",
+        "score": 0.156,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Modern HPC workloads increasingly stall on the memory hierarchy rather than on compute, and page faults from mmap'd files, swap, and tiered memory are a growing fraction of wall time.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2611.23765v1",
+      "source": "arXiv",
+      "title": "Mean Curvature Minimizing Foliations Of A Vector Field",
+      "authors": [
+        "Tabish A. Syed",
+        "Marc Theveneau",
+        "Benedikt Wirth",
+        "Rustum Choksi",
+        "Kaleem Siddiqi"
+      ],
+      "summary": "Streamline patterns are ubiquitous in nature. Prominent examples include white matter fibre tracts in the mammalian brain and arrangements of elongated cells, such as cardiomyocytes in the heart wall. It has been posited that such organisations foliate into locally smooth surfaces to optimise function. However, the recovery of these foliations from a single vector field aligned with the local orientation of the underlying sheets remains an open problem. We address this challenge by introducing a mathematical model of a sheet and developing an algorithm for sheet inference, from measurements of the oriented structures. Given an input vector field, our model estimates a second vector field that is orthonormal to it, while also requiring the Lie bracket of the two to vanish. To balance sheet likelihood against low surface area, we also reduce the mean curvature of the recovered local surface. We compute the first variation of an associated energy and provide a numerical method which admits an efficient, parallel implementation for sheet estimation. We demonstrate our approach on both synthetic and biological examples, motivated by applications to medical imaging. These include white matter fibre tracts from a brain atlas and confocal microscopy images of cleared heart wall tissue. For the latter we are able to reconstruct sheets aligned with local cardiomyocyte directions at unprecedented (micrometre) scale.",
+      "published": "2026-11-18T03:20:03Z",
+      "updated": "2026-11-18T03:20:03Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23765v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23765v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.113,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "super_resolution",
+        "topic_name": "图像超分辨率",
+        "score": 0.156,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.CV",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Streamline patterns are ubiquitous in nature.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.CV"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22680v1",
       "source": "arXiv",
       "title": "Classification of Tissues on MALDI-MSI Image Modality for Pancreatic Cancer Studies",
@@ -20979,7 +23003,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22345v1",
@@ -21082,7 +23106,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11579v1",
@@ -22035,6 +24059,372 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23856v1",
+      "source": "arXiv",
+      "title": "Beyond Cross-Modal Reconstruction: Participant-Level Evaluation of sEMG-Kinematic Coupling in Post-Stroke Gait",
+      "authors": [
+        "Rafsan Jany",
+        "Md Rafid Islam",
+        "Mohammad Fahim Islam",
+        "Hafiz Abdur Rahman"
+      ],
+      "summary": "Accurate cross-modal reconstruction is often treated as evidence of physiological coupling, although it may simply reflect temporal patterns shared across participants. We tested whether frozen bidirectional models captured subject-specific neuromuscular coupling between electromyographic activity and gait kinematics in 82 held-out able-bodied and 43 post-stroke participants. Complete source-modality removal and cross-participant source substitution, along with a cycle-position-age-sex template baseline, were applied. Learned bilateral asymmetry was also compared with transparent waveform and derivative asymmetry for predicting Performance-Oriented Mobility Assessment (POMA) scores in the case of repeated nested cross-validation. Complete source removal increased reconstruction RMSE by 6.90% for electromyography-to-kinematics and 11.38% in the reverse direction. In contrast, cross-participant substitution increased RMSE by only 1.68% and 1.67%, respectively, while the template reduced RMSE by 2.89% and 0.55%. For POMA prediction, walking speed, age, and sex achieved an MAE of 3.693, compared with 4.229 and 4.427 after adding absolute and signed learned asymmetry, respectively. In all of the 20 repeated evaluations, all asymmetry representations performed worse than the covariate baseline. No localized learned feature remained significant after covariate adjustment and false-discovery-rate correction. The model mainly relied on shared gait-phase patterns, with no clear subject-specific coupling or added clinical value. Participant-level controls are therefore needed before reconstruction accuracy is treated as evidence of individualized physiology.",
+      "published": "2026-11-18T05:02:17Z",
+      "updated": "2026-11-18T05:02:17Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23856v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23856v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.144,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.144,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Accurate cross-modal reconstruction is often treated as evidence of physiological coupling, although it may simply reflect temporal patterns shared across participants.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2611.23848v1",
+      "source": "arXiv",
+      "title": "A Fast, Programmable GPU-to-CPU Invocation Layer for GPU-Initiated Communication",
+      "authors": [
+        "Jiakun Yan",
+        "Shiksha Patel",
+        "David Sidler",
+        "Gengyu Rao",
+        "Brandon Potter",
+        "Bradford Beckmann"
+      ],
+      "summary": "Modern GPU workloads increasingly rely on device-initiated communication to let GPU kernels communicate directly without synchronizing with the host at kernel boundaries. Existing libraries commonly favor placing transport control on GPU threads, an approach known as GPUDirect Async (GDA), and treat reverse offload to host proxy threads as a slower fallback. We argue that reverse offload can outperform GDA and should be a first-class communication path. We further propose exposing reverse offload as a programming interface that lets users define workload-specific communication operations. We present KIWI, a programmable reverse-offload framework that achieves sub-microsecond one-way device-to-host latency and hundreds of millions of operations per second. We address practical challenges of scaling reverse offload, including contention on shared queues, polling overhead, and load imbalance across proxies. KIWI-P2P, a SHMEM-like library built on KIWI, outperforms state-of-the-art GDA implementations in both latency and bandwidth. More importantly, KIWI-EP redesigns low-latency mixture-of-experts dispatch and combine kernels around workload-defined operations, lowering expert-parallel communication latency by up to 2.3x over the best existing backend on AMD GPUs and time per output token in vLLM by up to 29%. The source code of KIWI is available at https://github.com/AMDResearch/kiwi.",
+      "published": "2026-11-18T04:52:50Z",
+      "updated": "2026-11-18T04:52:50Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "11 pages, 9 figures, 3 tables",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23848v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23848v1",
+      "categories": [
+        "cs.DC",
+        "cs.LG"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.144,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.144,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Modern GPU workloads increasingly rely on device-initiated communication to let GPU kernels communicate directly without synchronizing with the host at kernel boundaries.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2611.23836v1",
+      "source": "arXiv",
+      "title": "Online State-Representation Adaptation under Synthetic Interaction-Cue Remapping",
+      "authors": [
+        "Bin Yin"
+      ],
+      "summary": "When cues change what they predict, continuing to update a learned mapping may help an agent choose the appropriate action. We tested this in a one-step synthetic task by comparing a logistic state predictor that continued to learn from state labels with the same predictor frozen at transfer. We evaluated ten conditions in six held-out environments, with 1,296 paired runs per condition and 1,296,000 transfer records in total. Late action accuracy was 93.39% with online updates and 64.63% with frozen coefficients, a paired difference of 28.76 [8.73, 53.19] percentage points (95% environment-bootstrap interval). A direct policy reached 95.65% using the same predictions with a different action threshold. A contextual bandit reached 94.23% and earned more cumulative utility than the adaptive predictor. The bandit used the reward of its chosen action, which in this task reveals the true state when combined with that action. Weights based on development history lowered cumulative utility relative to neutral weights (difference -3.45 [-4.48, -2.43]). The adaptive predictor outperformed its frozen counterpart in late accuracy in each of the six test environments. The other comparisons show how the choice of action threshold and the information available in feedback affect what can be attributed to online adaptation.",
+      "published": "2026-11-18T04:41:47Z",
+      "updated": "2026-11-18T04:41:47Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "10 pages, 2 figures. Code and synthetic data are available at https://doi.org/10.5281/zenodo.24329690",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23836v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23836v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.144,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.144,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "When cues change what they predict, continuing to update a learned mapping may help an agent choose the appropriate action.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2611.23832v1",
+      "source": "arXiv",
+      "title": "A System 1 Decision Model for Medical Multiple-Choice Questions Built on Frozen Language Models",
+      "authors": [
+        "Pavan Kumar Mantha"
+      ],
+      "summary": "A System 1 model answers a multiple-choice question in a single pass. A frozen language model turns the question and each option into vectors, two small, trained heads place them in a shared space, and the closest option wins. The design has been shown on agent decisions, but we are not aware of a study of how far it goes on exam questions that need medical knowledge, where the right option is often no more similar to the question than the wrong ones. We rebuilt the recipe from scratch for MedMCQA and trained only two projection heads and one temperature on top of frozen Qwen3.5-0.8B, Granite-4.2-3B and Qwen3-8B, using a contrastive loss with in-batch and hard negatives and a mask for repeated answers. With plain last-token vectors, both small encoders answer about one question in three correctly (33.1% and 33.0% on 3,842 held-out questions, where chance is 25.0%). Writing each text inside a one-word-summary prompt and lowering the learning rate of the heads raised this to 41.7% and 42.5% for the two small encoders and to 46.0% +-0.2 (three seeds) for Qwen3-8B. Shuffling the questions against the options returns accuracy to chance, so the heads do use the question. Flan-PaLM and Med-PaLM 2 report 57.6% and 72.3% on MedMCQA under a different protocol, so ours is a cheap, fast baseline and not a competitive system. We also say what our evidence cannot show: validation gains were about 1.7 to 2 times the test gains, and we could not separate the effect of reading several encoder layers from the other changes.",
+      "published": "2026-11-18T04:38:49Z",
+      "updated": "2026-11-18T04:38:49Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "12 pages with 7 tabular explanations",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23832v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23832v1",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.144,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.AI",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.031,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.0,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.0,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.0,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.144,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.AI",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "A System 1 model answers a multiple-choice question in a single pass.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.AI"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22670v1",
       "source": "arXiv",
       "title": "Worldviews in Large Language Models",
@@ -22124,7 +24514,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22666v1",
@@ -22221,7 +24611,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22661v1",
@@ -22316,7 +24706,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22646v1",
@@ -22407,7 +24797,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22610v1",
@@ -22510,7 +24900,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22605v1",
@@ -22601,7 +24991,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22576v1",
@@ -22695,7 +25085,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22539v1",
@@ -22789,7 +25179,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22512v1",
@@ -22884,7 +25274,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22511v1",
@@ -22977,7 +25367,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22496v1",
@@ -23068,7 +25458,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22432v1",
@@ -23161,7 +25551,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22407v1",
@@ -23253,7 +25643,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22404v1",
@@ -23348,7 +25738,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22374v1",
@@ -23454,7 +25844,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11707v1",
@@ -26557,7 +28947,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22565v1",
@@ -26652,7 +29042,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22607v1",
@@ -26747,7 +29137,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22577v1",
@@ -26848,7 +29238,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11621v1",
@@ -27231,7 +29621,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22637v1",
@@ -27321,7 +29711,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22609v1",
@@ -27415,7 +29805,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22549v1",
@@ -27505,7 +29895,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22494v1",
@@ -27597,7 +29987,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22444v1",
@@ -27689,7 +30079,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22426v1",
@@ -27786,7 +30176,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22409v1",
@@ -27878,7 +30268,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22368v1",
@@ -27974,7 +30364,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22314v1",
@@ -28069,7 +30459,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11656v1",
@@ -29088,6 +31478,191 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23835v1",
+      "source": "arXiv",
+      "title": "NarrowSpec: Draft Hidden Width Need Not Match the Target in Speculative Decoding",
+      "authors": [
+        "Alagappan Valliappan",
+        "Ankit More",
+        "Dheevatsa Mudigere",
+        "Jatin Mitra"
+      ],
+      "summary": "Speculative decoding is widely used to speed up generation in large language models (LLMs), with a small draft model proposing tokens that one forward pass of the target model verifies. Draft models that read the target's hidden states, such as DFlash and EAGLE-3, typically inherit the target's hidden width. We show that the draft's whole residual stream can run at half or a quarter of that width while largely preserving acceptance. For DFlash, which borrows the target's vocabulary projection, the trained output adapter folds into it, giving one narrower projection with logits unchanged up to floating-point rounding. We test two drafter families, DFlash and EAGLE-3, on two targets, Qwen3-8B (NVFP4) and GPT-OSS-20B (MXFP4), in SGLang on a B200 and a DGX Spark (GB10). At batch size 1 and temperature 0, narrowing the draft to half or a quarter width speeds up end-to-end decoding by 1.06-1.12x on B200 and 1.13-1.44x on GB10. The speedup holds at larger batch sizes. From batch 32 to the largest batch each GPU fits, narrowing reaches up to 1.21x on both GPUs, and no narrow draft is slower than full width.",
+      "published": "2026-11-18T04:40:10Z",
+      "updated": "2026-11-18T04:40:10Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "29 pages, 6 figures, 33 tables",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23835v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23835v1",
+      "categories": [
+        "cs.CL",
+        "cs.LG",
+        "cs.PF"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.113,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.113,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Speculative decoding is widely used to speed up generation in large language models (LLMs), with a small draft model proposing tokens that one forward pass of the target model verifies.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2611.23781v1",
+      "source": "arXiv",
+      "title": "When accuracy hides risk: risk-controlled confirmation of the critical view of safety under expert disagreement",
+      "authors": [
+        "Bowen Xiang",
+        "Xiao Yu",
+        "Mingze Xu"
+      ],
+      "summary": "Automated assessment of the critical view of safety (CVS) in laparoscopic cholecystectomy has advanced rapidly, but a deployed check must decide, before the first clip, whether to confirm CVS. The standard rule calibrates a threshold so that false confirmations are rare on average. We show that this rule concentrates its errors on disputed videos, which one of three expert raters judged sufficient, and that the failure is structural. When reference labels are votes of a panel sampled from a larger expert pool, the rule that maximizes sensitivity at a fixed average false-confirmation rate also maximizes false confirmation of disputed videos, and for recognizers that recover expert judgement with less noise this rate rises with accuracy. We propose certified confirmation, a risk-controlled monitoring rule whose threshold is selected by multiple testing so that, with probability at least 1 - δ, false confirmation is at most α overall, among disputed videos, within vendor and country groups, and before CVS is visible, using disputed labels only to calibrate. In a pre-specified, hash-locked evaluation on the 300 test videos (18 countries) of the SAGES CVS Challenge, standard calibration falsely confirmed 8 of 39 disputed videos (0.21; one-sided p = 0.037 against α = 0.10), whereas certified confirmation confirmed 2 (one-sided 95% upper bound 0.15). On development data, protection held for vendor and country groups left out of calibration. The cost was confirming 10% rather than 35% of sufficient videos on time. Average accuracy hides this risk; disputed cases must be protected explicitly.",
+      "published": "2026-11-18T03:37:45Z",
+      "updated": "2026-11-18T03:37:45Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23781v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23781v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.113,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.113,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.CV",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Automated assessment of the critical view of safety (CVS) in laparoscopic cholecystectomy has advanced rapidly, but a deployed check must decide, before the first clip, whether to confirm CVS.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.CV"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22697v1",
       "source": "arXiv",
       "title": "Remembered as Brief: Stored Preferences SilentlyRemove Decision-Critical Information",
@@ -29176,7 +31751,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22612v1",
@@ -29274,7 +31849,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22556v1",
@@ -29365,7 +31940,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22525v1",
@@ -29461,7 +32036,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22457v1",
@@ -29556,7 +32131,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22449v1",
@@ -29649,7 +32224,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22392v1",
@@ -29743,7 +32318,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22338v1",
@@ -29840,7 +32415,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22310v1",
@@ -29935,7 +32510,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11696v1",
@@ -32939,7 +35514,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11641v1",
@@ -33132,6 +35707,101 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23801v1",
+      "source": "arXiv",
+      "title": "Improved Leverage Score Sampling for Constrained Active Linear Regression",
+      "authors": [
+        "Aarshvi Gajjar",
+        "Syamantak Kumar",
+        "Aditya Makkar",
+        "Christopher Musco",
+        "Joey Zhou"
+      ],
+      "summary": "In this paper we study active learning for constrained linear regression. Given a design matrix $A\\in\\mathbb{R}^{n\\times d}$, a constraint set $C\\subseteq\\mathbb{R}^d$, and query access to $b\\in\\mathbb{R}^n$, we seek an approximate solution to $\\min_{x\\in C}\\|Ax-b\\|_2^2$ using as few queries as possible. This problem arises in many scientific and engineering applications, and randomized leverage score sampling provides a powerful method to solve it. However, existing leverage score methods ignore the constraint or encode it through ridge regularization, suffering unfavorable query complexity for anisotropic constraint sets. We propose ellipsoid-regularized leverage scores, where we approximate the constraint set by an outer ellipsoid and use its shape matrix to bias sampling toward directions that matter under the constraint geometry. We prove that the query complexity is governed by an anisotropic effective dimension $d_{\\text{eff}}(C)\\le d$. With appropriate parameters, $O(d_{\\text{eff}}(C)\\log d/\\varepsilon^2)$ queries suffice to return a point in $C$ with objective value at most $(1+\\varepsilon)$ times the optimum. This bound can substantially improve on the standard leverage-score bound, since anisotropic constraints can make $d_{\\text{eff}}(C)$ much smaller than $d$. For convex constraints, we improve the dependence on $\\varepsilon$ from $1/\\varepsilon^2$ to $1/\\varepsilon$. We also prove two lower bounds: first, the $d/\\varepsilon^2$ dependence is unavoidable without convexity assumptions on $C$, and second, in some regimes, the effective dimension dependence $d_{\\mathrm{eff}}(C)/\\varepsilon$ is necessary for ellipsoidal constraints. Experiments on synthetic regression problems and a parametric heat conduction problem show lower regression error than standard baselines for similar query budget.",
+      "published": "2026-11-18T04:06:10Z",
+      "updated": "2026-11-18T04:06:10Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "To appear in NeurIPS 2026 (Spotlight)",
+      "publication_status": {
+        "status": "venue_note",
+        "label": "会议/期刊信息",
+        "venue": "NeurIPS 2026",
+        "short_venue": "NeurIPS 2026",
+        "source": "arXiv comment",
+        "has_publication_info": true
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23801v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23801v1",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.NA"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "low_level_dataset_benchmark",
+        "topic_name": "Low-level 图像增强数据集",
+        "score": 0.094,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "In this paper we study active learning for constrained linear regression.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22396v1",
       "source": "arXiv",
       "title": "From Constraints to Causality: Petri net Encodings for Explaining Binary Neural Network Inference",
@@ -33222,7 +35892,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22312v1",
@@ -33312,7 +35982,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11697v1",
@@ -34337,6 +37007,99 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.23817v1",
+      "source": "arXiv",
+      "title": "Metrics-in-the-Loop: Complexity Feedback Reshapes Agent-Written Code",
+      "authors": [
+        "Nicolas Chapados",
+        "Jean-François Gagné",
+        "Nouha Dziri"
+      ],
+      "summary": "Coding agents now write whole codebases in long autonomous runs, guided mainly by whether their tests pass. Yet passing tests alone does not reveal accumulating complexity or gaps in test coverage, which then persist as agents extend their own code. We introduce metrics-in-the-loop, an inference-time intervention that gives agents in-flight feedback: cheap, automatically computed code metrics injected into the agent's context during the trajectory. After each code-changing agent turn, we insert short feedback messages naming changed functions whose cyclomatic complexity exceeds a limit (complexity feedback) or changed lines that are skipped by tests (coverage feedback), giving the agent the opportunity to refactor code or strengthen tests before continuing. We run extensive experiments and ablations comparing several interventions across three long-horizon coding benchmarks and four strong models. We find that complexity feedback significantly reduces erosion, a measure of complexity concentration of code, without affecting held-out correctness of the code. Broadly, our experiments investigate a practical form of agent \"re-railing\", where timely, actionable measurements redirect agents before weaknesses become the foundation they keep building on. As agents scale to codebases with millions of lines, such interventions become critical to sustaining effective development and long-term code maintainability.",
+      "published": "2026-11-18T04:19:48Z",
+      "updated": "2026-11-18T04:19:48Z",
+      "journal_ref": "",
+      "doi": "",
+      "comment": "Agent Evaluation Science Symposium, Fall 2026, New York City",
+      "publication_status": {
+        "status": "unknown",
+        "label": "暂无期刊信息",
+        "venue": "",
+        "short_venue": "",
+        "source": "",
+        "has_publication_info": false
+      },
+      "paper_url": "http://arxiv.org/abs/2611.23817v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23817v1",
+      "categories": [
+        "cs.AI"
+      ],
+      "seed_topic": "batch",
+      "matches": [
+        {
+          "topic_id": "all_in_one_image_restoration",
+          "topic_name": "All-in-one 图像复原",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.AI",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "low_level_dataset_benchmark",
+          "topic_name": "Low-level 图像增强数据集",
+          "score": 0.066,
+          "level": "low",
+          "reason": "关键词命中：benchmark",
+          "keyword_hits": [
+            "benchmark"
+          ]
+        },
+        {
+          "topic_id": "super_resolution",
+          "topic_name": "图像超分辨率",
+          "score": 0.031,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "adverse_weather_restoration",
+          "topic_name": "恶劣天气图像恢复",
+          "score": 0.0,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "single_task_restoration",
+          "topic_name": "其他单任务图像/视频复原",
+          "score": 0.0,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "all_in_one_image_restoration",
+        "topic_name": "All-in-one 图像复原",
+        "score": 0.081,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.AI",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Coding agents now write whole codebases in long autonomous runs, guided mainly by whether their tests pass.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.AI"
+      },
+      "first_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "last_seen_at": "2026-11-19T02:56:08.000156+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.22648v1",
       "source": "arXiv",
       "title": "EDA: Observe, Verify, and Assess for Evidence-Grounded Multimodal Depression Analysis",
@@ -34428,7 +37191,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22639v1",
@@ -34522,7 +37285,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22583v1",
@@ -34621,7 +37384,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22532v1",
@@ -34712,7 +37475,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22420v1",
@@ -34803,7 +37566,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11653v1",
@@ -36018,7 +38781,7 @@
       },
       "first_seen_at": "2026-11-18T03:19:30.407695+00:00",
       "last_seen_at": "2026-11-18T03:19:30.407695+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2610.11387v1",
@@ -36210,11 +38973,11 @@
     }
   ],
   "stats": {
-    "paper_count": 378,
-    "new_paper_count": 125,
+    "paper_count": 407,
+    "new_paper_count": 29,
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-11-17T04:19:06.637134+00:00",
+    "collection_cutoff_iso": "2026-11-18T03:19:30.407695+00:00",
     "max_per_topic": 25,
     "llm_enabled": false,
     "llm_concurrency": 2,
@@ -36223,12 +38986,12 @@
     "failed_fetches": 0,
     "arxiv_fetch_mode": "batch",
     "arxiv_fetch_attempts": 1,
-    "retained_paper_count": 253,
-    "retained_recent_low_count": 250,
+    "retained_paper_count": 378,
+    "retained_recent_low_count": 375,
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 800,
     "max_data_bytes": 8388608,
-    "data_bytes": 1840870,
+    "data_bytes": 1980478,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
