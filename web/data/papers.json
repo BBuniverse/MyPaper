@@ -1,6 +1,6 @@
 {
-  "generated_at": "Thu, 26 Nov 2026 03:57:10 +0000",
-  "generated_at_iso": "2026-11-26T03:57:10.099952+00:00",
+  "generated_at": "Fri, 27 Nov 2026 03:56:25 +0000",
+  "generated_at_iso": "2026-11-27T03:56:25.124694+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -1533,7 +1533,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22657v1",
@@ -2408,7 +2408,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32816v1",
@@ -2807,7 +2807,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34079v1",
@@ -2907,7 +2907,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34032v1",
@@ -3001,7 +3001,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32687v1",
@@ -3686,7 +3686,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34126v1",
@@ -3791,7 +3791,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32899v1",
@@ -4080,7 +4080,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34046v1",
@@ -4172,7 +4172,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.30096v1",
@@ -5039,7 +5039,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32830v1",
@@ -5687,7 +5687,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34122v1",
@@ -5782,7 +5782,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34112v1",
@@ -5876,7 +5876,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32940v1",
@@ -6727,7 +6727,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34152v1",
@@ -6826,7 +6826,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32967v1",
@@ -7594,7 +7594,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34093v1",
@@ -7688,7 +7688,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34056v1",
@@ -7784,7 +7784,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.33985v1",
@@ -7880,7 +7880,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32793v1",
@@ -8936,7 +8936,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.30253v1",
@@ -11005,7 +11005,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34121v1",
@@ -11097,7 +11097,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34101v1",
@@ -11191,7 +11191,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.33973v1",
@@ -11286,7 +11286,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32873v1",
@@ -12718,7 +12718,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34108v1",
@@ -12813,7 +12813,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34067v1",
@@ -12912,7 +12912,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34049v1",
@@ -13007,7 +13007,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.33990v1",
@@ -13106,7 +13106,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.30345v1",
@@ -14384,7 +14384,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34226v1",
@@ -14476,7 +14476,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.33982v1",
@@ -14573,7 +14573,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32866v1",
@@ -15521,7 +15521,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34250v1",
@@ -15626,7 +15626,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34249v1",
@@ -15724,7 +15724,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34130v1",
@@ -15820,7 +15820,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34078v1",
@@ -15911,7 +15911,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34054v1",
@@ -16002,7 +16002,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32941v1",
@@ -19253,7 +19253,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32945v1",
@@ -19946,7 +19946,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34248v1",
@@ -20042,7 +20042,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34207v1",
@@ -20140,7 +20140,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34106v1",
@@ -20239,7 +20239,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34075v1",
@@ -20334,7 +20334,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34036v1",
@@ -20429,7 +20429,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34035v1",
@@ -20522,7 +20522,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34012v1",
@@ -20616,7 +20616,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.33972v1",
@@ -20713,7 +20713,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32823v1",
@@ -22085,7 +22085,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34153v1",
@@ -22182,7 +22182,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34115v1",
@@ -22281,7 +22281,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34096v1",
@@ -22382,7 +22382,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34083v1",
@@ -22479,7 +22479,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34025v1",
@@ -22573,7 +22573,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34021v1",
@@ -22672,7 +22672,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32969v1",
@@ -23830,7 +23830,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34237v1",
@@ -23927,7 +23927,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34223v1",
@@ -24021,7 +24021,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34141v1",
@@ -24114,7 +24114,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34005v1",
@@ -24204,7 +24204,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.33963v1",
@@ -24300,7 +24300,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32825v1",
@@ -25242,7 +25242,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34284v1",
@@ -25341,7 +25341,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34279v1",
@@ -25433,7 +25433,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34211v1",
@@ -25527,7 +25527,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34169v1",
@@ -25623,7 +25623,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34143v1",
@@ -25716,7 +25716,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34140v1",
@@ -25809,7 +25809,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34139v1",
@@ -25900,7 +25900,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34132v1",
@@ -25998,7 +25998,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34064v1",
@@ -26100,7 +26100,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34027v1",
@@ -26194,7 +26194,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.33991v1",
@@ -26293,7 +26293,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.33962v1",
@@ -26388,7 +26388,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.33958v1",
@@ -26479,7 +26479,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32971v1",
@@ -30587,7 +30587,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32598v1",
@@ -30984,7 +30984,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34270v1",
@@ -31081,7 +31081,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34128v1",
@@ -31181,7 +31181,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34104v1",
@@ -31272,7 +31272,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34019v1",
@@ -31371,7 +31371,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32964v1",
@@ -32709,7 +32709,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34232v1",
@@ -32877,7 +32877,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34224v1",
@@ -32978,7 +32978,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34134v1",
@@ -33072,7 +33072,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34098v1",
@@ -33169,7 +33169,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34022v1",
@@ -33264,7 +33264,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34008v1",
@@ -33360,7 +33360,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.33964v1",
@@ -33458,7 +33458,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32970v1",
@@ -35497,7 +35497,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34084v1",
@@ -35590,7 +35590,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.30170v1",
@@ -36442,7 +36442,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34215v1",
@@ -36536,7 +36536,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34162v1",
@@ -36630,7 +36630,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34155v1",
@@ -36725,7 +36725,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34136v1",
@@ -36818,7 +36818,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34099v1",
@@ -36909,7 +36909,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34088v1",
@@ -37001,7 +37001,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34062v1",
@@ -37093,7 +37093,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34006v1",
@@ -37185,7 +37185,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32954v1",
@@ -41715,7 +41715,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32646v1",
@@ -41909,7 +41909,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.30065v1",
@@ -42375,7 +42375,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.33998v1",
@@ -42473,7 +42473,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.33993v1",
@@ -42574,7 +42574,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32951v1",
@@ -43922,7 +43922,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34092v1",
@@ -44027,7 +44027,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34091v1",
@@ -44123,7 +44123,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32923v1",
@@ -46080,7 +46080,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34206v1",
@@ -46171,7 +46171,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34142v1",
@@ -46266,7 +46266,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34015v1",
@@ -46356,7 +46356,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34011v1",
@@ -46448,7 +46448,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.33983v1",
@@ -46537,7 +46537,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.33966v1",
@@ -46633,7 +46633,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32959v1",
@@ -50095,7 +50095,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34166v1",
@@ -50192,7 +50192,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32957v1",
@@ -51049,7 +51049,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34051v1",
@@ -51152,7 +51152,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32952v1",
@@ -52266,7 +52266,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34190v1",
@@ -52364,7 +52364,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34147v1",
@@ -52459,7 +52459,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34068v1",
@@ -52557,7 +52557,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.34016v1",
@@ -52649,7 +52649,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.32815v1",
@@ -54235,7 +54235,7 @@
       },
       "first_seen_at": "2026-11-26T03:57:10.099952+00:00",
       "last_seen_at": "2026-11-26T03:57:10.099952+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.22323v1",
@@ -54334,10 +54334,10 @@
   ],
   "stats": {
     "paper_count": 565,
-    "new_paper_count": 125,
+    "new_paper_count": 0,
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-11-25T04:46:17.297581+00:00",
+    "collection_cutoff_iso": "2026-11-26T03:57:10.099952+00:00",
     "max_per_topic": 25,
     "llm_enabled": false,
     "llm_concurrency": 2,
@@ -54346,12 +54346,12 @@
     "failed_fetches": 0,
     "arxiv_fetch_mode": "batch",
     "arxiv_fetch_attempts": 1,
-    "retained_paper_count": 440,
-    "retained_recent_low_count": 435,
+    "retained_paper_count": 565,
+    "retained_recent_low_count": 560,
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 800,
     "max_data_bytes": 8388608,
-    "data_bytes": 2747231,
+    "data_bytes": 2747104,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
